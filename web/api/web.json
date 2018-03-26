@@ -6,8 +6,7 @@
       "data": [
         {
           "title": "java基础面试",
-          "path": "java/base/java-base.json",
-          "url": "https://github.com/supets-open/InterView/blob/master/web/java/base/Object%E7%B1%BB%E6%9C%89%E5%93%AA%E4%BA%9B%E6%96%B9%E6%B3%95.md"
+          "path": "java/base/base.json"
         }
       ]
     },
@@ -16,8 +15,7 @@
       "data": [
         {
           "title": "android基础面试",
-          "path": "java/base/java-base.json",
-          "url": "https://github.com/supets-open/InterView/blob/master/web/java/base/Object%E7%B1%BB%E6%9C%89%E5%93%AA%E4%BA%9B%E6%96%B9%E6%B3%95.md"
+          "path": "android/base/base.json"
         }
       ]
     },
@@ -26,13 +24,11 @@
       "data": [
         {
           "title": "数据结构",
-          "path": "java/base/java-base.json",
-          "url": "https://github.com/supets-open/InterView/blob/master/web/java/base/Object%E7%B1%BB%E6%9C%89%E5%93%AA%E4%BA%9B%E6%96%B9%E6%B3%95.md"
+          "path": "java/base/base.json"
         },
         {
           "title": "算法",
-          "path": "java/base/java-base.json",
-          "url": "https://github.com/supets-open/InterView/blob/master/web/java/base/Object%E7%B1%BB%E6%9C%89%E5%93%AA%E4%BA%9B%E6%96%B9%E6%B3%95.md"
+          "path": "java/base/base.json"
         }
       ]
     }
