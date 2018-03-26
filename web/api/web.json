@@ -2,7 +2,7 @@
   "code":200,
   "list": [
     {
-      "key": "java",
+      "key": "Java面试",
       "data": [
         {
           "title": "java基础面试",
@@ -11,24 +11,11 @@
       ]
     },
     {
-      "key": "android",
+      "key": "Android面试",
       "data": [
         {
           "title": "android基础面试",
           "path": "/android/base/base.json"
-        }
-      ]
-    },
-    {
-      "key": "数据结构和算法",
-      "data": [
-        {
-          "title": "数据结构",
-          "path": "/java/base/base.json"
-        },
-        {
-          "title": "算法",
-          "path": "/java/base/base.json"
         }
       ]
     }
