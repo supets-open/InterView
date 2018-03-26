@@ -8,7 +8,6 @@
 	StringBuffer ----> 字符串变量（线程安全的）
 	StringBuilder ----> 字符串变量（非线程安全的
 	官方解释说：String 是一个常量，他的值在创建之后不能改变，字符串缓冲区支持修改，因为字符串对象是不可变的，所以支持共享。
-	
 	String s = "abc";  
 	s = s + 1;  
 	System.out.println(s);

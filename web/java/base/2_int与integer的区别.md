@@ -8,6 +8,7 @@
 	3、Integer实际是对象的引用，当new一个Integer时，实际上是生成一个指针指向此对象；而int则是直接存储数据值 
 	4、Integer的默认值是null，int的默认值是0
 	
+	
 	关于Integer和int的比较 
 	1、由于Integer变量实际上是对一个Integer对象的引用，所以两个通过new生成的Integer变量永远是不相等的（因为new生成的是两个对象，其内存地址不同）。
 	Integer i = new Integer(100);
