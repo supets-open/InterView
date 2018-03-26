@@ -4,7 +4,7 @@
 ### 答案
 
 
-	java采用unicode，2个字节（16位）来表示一个字符。
+java采用unicode，2个字节（16位）来表示一个字符。
     byte 1个字节
 	short 2个字节
 	char 2个字节
