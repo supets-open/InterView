@@ -40,6 +40,18 @@
     {
       "name": "10_Java中实现多态的机制是什么？",
     "path": "/java/source/10_Java中实现多态的机制是什么？.md"
+    },
+    {
+      "name": "11_如何将一个Java对象序列化到文件里？",
+    "path": "/java/source/11_如何将一个Java对象序列化到文件里？.md"
+    },
+    {
+      "name": "12_Java类加载器总结",
+    "path": "/java/source/12_Java类加载器总结.md"
+    },
+    {
+      "name": "12_说说你对Java反射的理解",
+    "path": "/java/source/12_说说你对Java反射的理解.md"
     }
   ]
 }
