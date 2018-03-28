@@ -52,6 +52,22 @@
     {
       "name": "12_说说你对Java反射的理解",
     "path": "/java/source/12_说说你对Java反射的理解.md"
+    },
+    {
+      "name": "13_说说你对Java注解的理解",
+    "path": "/java/source/13_说说你对Java注解的理解.md"
+    },
+    {
+      "name": "14_说说你对控制反转IOC的理解",
+    "path": "/java/source/14_说说你对控制反转IOC的理解.md"
+    },
+    {
+      "name": "14_说说你对依赖注入DI的理解",
+    "path": "/java/source/14_说说你对依赖注入DI的理解.md"
+    },
+    {
+      "name": "15_String为什么要设计成不可变的？",
+    "path": "/java/source/15_String为什么要设计成不可变的？.md"
     }
   ]
 }
