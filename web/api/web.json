@@ -7,16 +7,20 @@
         {
           "title": "1 java基础面试知识点",
           "path": "/java/base/base.json"
-        },{
+        },
+        {
           "title": "2 java深入源码级的面试题",
           "path": "/java/source/base.json"
-        },{
+        },
+        {
           "title": "3 数据结构",
           "path": "/java/base/base.json"
-        },{
+        },
+        {
           "title": "4 线程、多线程和线程池",
           "path": "/java/base/base.json"
-        },{
+        },
+        {
           "title": "5 并发编程有关知识点",
           "path": "/java/base/base.json"
         }
@@ -90,9 +94,10 @@
         {
           "title": "1 公司面试",
           "path": "/result/result.json"
-        },{
+        },
+        {
           "title": "2 技术总结",
-          "path": "/result/result2.json"
+          "path": "/result/result1.json"
         }
       ]
     }
