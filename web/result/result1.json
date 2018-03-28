@@ -1,0 +1,68 @@
+{
+  "data": [
+    {
+      "name": "android适配篇",
+      "path": "https://github.com/supets-open/android-media-share/blob/master/技术架构/android适配篇.pdf"
+    },{
+      "name": "aop",
+      "path": "https://github.com/supets-open/android-media-share/blob/master/技术架构/aop.pdf"
+    },{
+      "name": "eclipse 创建签名文件和查看签名SHA",
+      "path": "https://github.com/supets-open/android-media-share/blob/master/技术架构/eclipse 创建签名文件和查看签名SHA.pdf"
+    },{
+      "name": "eclipse 自动运行NDK 配置",
+      "path": "https://github.com/supets-open/android-media-share/blob/master/技术架构/eclipse 自动运行NDK 配置.pdf"
+    },{
+      "name": "EditText篇",
+      "path": "https://github.com/supets-open/android-media-share/blob/master/技术架构/EditText篇.pdf"
+    },{
+      "name": "maven仓库篇",
+      "path": "https://github.com/supets-open/android-media-share/blob/master/技术架构/maven仓库篇.pdf"
+    },{
+      "name": "popwindow篇",
+      "path": "https://github.com/supets-open/android-media-share/blob/master/技术架构/popwindow篇.pdf"
+    },{
+      "name": "rest架构",
+      "path": "https://github.com/supets-open/android-media-share/blob/master/技术架构/rest架构.pdf"
+    },{
+      "name": "ViewHolder篇",
+      "path": "https://github.com/supets-open/android-media-share/blob/master/技术架构/ViewHolder篇.pdf"
+    },{
+      "name": "布局篇章",
+      "path": "https://github.com/supets-open/android-media-share/blob/master/技术架构/布局篇章.pdf"
+    },{
+      "name": "插件",
+      "path": "https://github.com/supets-open/android-media-share/blob/master/技术架构/插件.pdf"
+    },{
+      "name": "高级布局篇",
+      "path": "https://github.com/supets-open/android-media-share/blob/master/技术架构/高级布局篇.pdf"
+    },{
+      "name": "滚动监听篇",
+      "path": "https://github.com/supets-open/android-media-share/blob/master/技术架构/滚动监听篇.pdf"
+    },{
+      "name": "滚动篇",
+      "path": "https://github.com/supets-open/android-media-share/blob/master/技术架构/滚动篇.pdf"
+    },{
+      "name": "兼容篇",
+      "path": "https://github.com/supets-open/android-media-share/blob/master/技术架构/兼容篇.pdf"
+    },{
+      "name": "键盘篇",
+      "path": "https://github.com/supets-open/android-media-share/blob/master/技术架构/键盘篇.pdf"
+    },{
+      "name": "开发工具篇",
+      "path": "https://github.com/supets-open/android-media-share/blob/master/技术架构/开发工具篇.pdf"
+    },{
+      "name": "启动模式机制导航",
+      "path": "https://github.com/supets-open/android-media-share/blob/master/技术架构/启动模式机制导航.pdf"
+    },{
+      "name": "手把手教你配置android持续集成开发环境",
+      "path": "https://github.com/supets-open/android-media-share/blob/master/技术架构/手把手教你配置android持续集成开发环境.pdf"
+    },,{
+      "name": "算法篇章",
+      "path": "https://github.com/supets-open/android-media-share/blob/master/技术架构/算法篇章.pdf"
+    },,{
+      "name": "云宠架构篇",
+      "path": "https://github.com/supets-open/android-media-share/blob/master/技术架构/云宠架构篇.pdf"
+    }
+  ]
+}

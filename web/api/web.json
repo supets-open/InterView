@@ -83,6 +83,18 @@
           "path": "/android/base/base.json"
         }
       ]
-    }
+    },
+    {
+      "key": "三 技术总结",
+      "data": [
+        {
+          "title": "1 公司面试",
+          "path": "/result/result.json"
+        },{
+          "title": "2 技术总结",
+          "path": "/result/result2.json"
+        }
+      ]
+    },
   ]
 }
