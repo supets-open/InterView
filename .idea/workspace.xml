@@ -28,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/web/result/result1.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="271">
-              <caret line="84" column="83" lean-forward="false" selection-start-line="84" selection-start-column="83" selection-end-line="84" selection-end-column="83" />
+              <caret line="84" column="87" lean-forward="false" selection-start-line="84" selection-start-column="87" selection-end-line="84" selection-end-column="87" />
               <folding />
             </state>
           </provider>
@@ -133,7 +133,7 @@
     <property name="android.sdk.path" value="C:/sdk" />
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1522225401202" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1522225751071" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -643,7 +643,14 @@
       <option name="project" value="LOCAL" />
       <updated>1522225112130</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="init">
+      <created>1522225405859</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1522225405859</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TodoView">
@@ -777,7 +784,7 @@
     <entry file="file://$PROJECT_DIR$/web/result/result1.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
-          <caret line="84" column="83" lean-forward="false" selection-start-line="84" selection-start-column="83" selection-end-line="84" selection-end-column="83" />
+          <caret line="84" column="87" lean-forward="false" selection-start-line="84" selection-start-column="87" selection-end-line="84" selection-end-column="87" />
           <folding />
         </state>
       </provider>
