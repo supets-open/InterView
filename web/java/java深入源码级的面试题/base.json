@@ -68,6 +68,10 @@
     {
       "name": "15_String为什么要设计成不可变的？",
     "path": "/java/java深入源码级的面试题/15_String为什么要设计成不可变的？.md"
+    },
+    {
+      "name": "16_object对象重写equals方法时为什么需要重写hashCode方法 ",
+    "path": "/java/java深入源码级的面试题/16_object对象重写equals方法时为什么需要重写hashCode方法 .md"
     }
   ]
 }
