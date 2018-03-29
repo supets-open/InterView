@@ -93,11 +93,15 @@
       "data": [
         {
           "title": "1 公司面试",
-          "path": "/result/result.json"
+          "path": "/result/公司面试/base.json"
         },
         {
           "title": "2 技术总结",
-          "path": "/result/result1.json"
+          "path": "/result/技术总结/base.json"
+        },
+        {
+          "title": "2 读书笔记",
+          "path": "/result/读书笔记/base.json"
         }
       ]
     }
