@@ -2,7 +2,71 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="021edff3-50ca-45e6-9689-754feda00050" name="Default" comment="init">
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/android/Android基础知识点/base.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/android/Android源码相关分析/base.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/android/NDK-jni-Binder-AIDL-进程通信有关/base.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/android/framework层-ROM定制-Ubuntu-Linux之类的问题/base.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/android/图片处理技术/base.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/android/常见的一些原理性问题/base.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/android/开发中常见的一些问题/base.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/android/性能优化/base.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/android/插件化模块化组件化热修复增量更新Gradle/base.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/android/数据库/base.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/android/架构设计和设计模式/base.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/android/算法/base.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/android/网络和安全机制/Android手机App安全漏洞整理.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/android/网络和安全机制/base.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/java/java基础面试知识点/base.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/java/java深入源码级的面试题/base.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/java/多线程和线程池/base.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/java/并发编程有关知识点/base.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/java/数据结构/base.json" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/web/android/base/Handler机制原理.md" afterPath="$PROJECT_DIR$/web/android/Android基础知识点/Handler机制原理.md" />
+      <change beforePath="$PROJECT_DIR$/web/android/base/base.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/android/base/四大组件是什么.md" afterPath="$PROJECT_DIR$/web/android/Android基础知识点/四大组件是什么.md" />
+      <change beforePath="$PROJECT_DIR$/web/api/web.json" afterPath="$PROJECT_DIR$/web/api/web.json" />
+      <change beforePath="$PROJECT_DIR$/web/java/base/0_Object类有哪些方法.md" afterPath="$PROJECT_DIR$/web/java/java基础面试知识点/0_Object类有哪些方法.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/base/10_接口的意义.md" afterPath="$PROJECT_DIR$/web/java/java基础面试知识点/10_接口的意义.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/base/11_泛型中extends和super的区别.md" afterPath="$PROJECT_DIR$/web/java/java基础面试知识点/11_泛型中extends和super的区别.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/base/12_父类的静态方法能否被子类重写.md" afterPath="$PROJECT_DIR$/web/java/java基础面试知识点/12_父类的静态方法能否被子类重写.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/base/13_进程和线程的区别.md" afterPath="$PROJECT_DIR$/web/java/java基础面试知识点/13_进程和线程的区别.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/base/14_final，finally，finalize的区别.md" afterPath="$PROJECT_DIR$/web/java/java基础面试知识点/14_final，finally，finalize的区别.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/base/15_序列化的方式.md" afterPath="$PROJECT_DIR$/web/java/java基础面试知识点/15_序列化的方式.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/base/16_Serializable 和Parcelable 的区别.md" afterPath="$PROJECT_DIR$/web/java/java基础面试知识点/16_Serializable 和Parcelable 的区别.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/base/17_静态属性和静态方法是否可以被继承？是否可以被重写？以及原因？.md" afterPath="$PROJECT_DIR$/web/java/java基础面试知识点/17_静态属性和静态方法是否可以被继承？是否可以被重写？以及原因？.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/base/18_静态内部类的设计意图.md" afterPath="$PROJECT_DIR$/web/java/java基础面试知识点/18_静态内部类的设计意图.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/base/19_闭包和局部内部类的区别.md" afterPath="$PROJECT_DIR$/web/java/java基础面试知识点/19_闭包和局部内部类的区别.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/base/1_int、char、long各占多少字节数（标准32位系统）.md" afterPath="$PROJECT_DIR$/web/java/java基础面试知识点/1_int、char、long各占多少字节数（标准32位系统）.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/base/20_谈谈对kotlin的理解.md" afterPath="$PROJECT_DIR$/web/java/java基础面试知识点/20_谈谈对kotlin的理解.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/base/21_string 转换成 integer的方式及原理.md" afterPath="$PROJECT_DIR$/web/java/java基础面试知识点/21_string 转换成 integer的方式及原理.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/base/2_int与integer的区别.md" afterPath="$PROJECT_DIR$/web/java/java基础面试知识点/2_int与integer的区别.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/base/3_java中==和equals和hashCode的区别.md" afterPath="$PROJECT_DIR$/web/java/java基础面试知识点/3_java中==和equals和hashCode的区别.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/base/4_String、StringBuffer、StringBuilder区别.md" afterPath="$PROJECT_DIR$/web/java/java基础面试知识点/4_String、StringBuffer、StringBuilder区别.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/base/5_探探对java多态的理解.md" afterPath="$PROJECT_DIR$/web/java/java基础面试知识点/5_探探对java多态的理解.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/base/6_什么是内部类？内部类的作用.md" afterPath="$PROJECT_DIR$/web/java/java基础面试知识点/6_什么是内部类？内部类的作用.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/base/7_抽象类和接口区别.md" afterPath="$PROJECT_DIR$/web/java/java基础面试知识点/7_抽象类和接口区别.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/base/8_抽象类的意义.md" afterPath="$PROJECT_DIR$/web/java/java基础面试知识点/8_抽象类的意义.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/base/9_抽象类是否可以没有方法和属性.md" afterPath="$PROJECT_DIR$/web/java/java基础面试知识点/9_抽象类是否可以没有方法和属性.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/base/base.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/java/source/10_Java中实现多态的机制是什么？.md" afterPath="$PROJECT_DIR$/web/java/java深入源码级的面试题/10_Java中实现多态的机制是什么？.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/source/11_如何将一个Java对象序列化到文件里？.md" afterPath="$PROJECT_DIR$/web/java/java深入源码级的面试题/11_如何将一个Java对象序列化到文件里？.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/source/12_Java类加载器总结.md" afterPath="$PROJECT_DIR$/web/java/java深入源码级的面试题/12_Java类加载器总结.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/source/12_说说你对Java反射的理解.md" afterPath="$PROJECT_DIR$/web/java/java深入源码级的面试题/12_说说你对Java反射的理解.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/source/13_说说你对Java注解的理解.md" afterPath="$PROJECT_DIR$/web/java/java深入源码级的面试题/13_说说你对Java注解的理解.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/source/14_说说你对依赖注入DI的理解.md" afterPath="$PROJECT_DIR$/web/java/java深入源码级的面试题/14_说说你对依赖注入DI的理解.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/source/14_说说你对控制反转IOC的理解.md" afterPath="$PROJECT_DIR$/web/java/java深入源码级的面试题/14_说说你对控制反转IOC的理解.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/source/15_String为什么要设计成不可变的？.md" afterPath="$PROJECT_DIR$/web/java/java深入源码级的面试题/15_String为什么要设计成不可变的？.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/source/1_哪些情况下的对象会被垃圾回收机制处理掉？.md" afterPath="$PROJECT_DIR$/web/java/java深入源码级的面试题/1_哪些情况下的对象会被垃圾回收机制处理掉？.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/source/2_讲一下常见编码方式？.md" afterPath="$PROJECT_DIR$/web/java/java深入源码级的面试题/2_讲一下常见编码方式？.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/source/3_utf-8编码中的中文占几个字节；int型几个字节？.md" afterPath="$PROJECT_DIR$/web/java/java深入源码级的面试题/3_utf-8编码中的中文占几个字节；int型几个字节？.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/source/4_静态代理和动态代理的区别，什么场景使用？.md" afterPath="$PROJECT_DIR$/web/java/java深入源码级的面试题/4_静态代理和动态代理的区别，什么场景使用？.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/source/5_Java的异常体系.md" afterPath="$PROJECT_DIR$/web/java/java深入源码级的面试题/5_Java的异常体系.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/source/6_谈谈你对解析与分派的认识？ - 副本.md" afterPath="$PROJECT_DIR$/web/java/java深入源码级的面试题/6_谈谈你对解析与分派的认识？ - 副本.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/source/7_修改对象A的equals方法的签名，那么使用HashMap存放这个对象实例的时候，会调用哪个equals方法？.md" afterPath="$PROJECT_DIR$/web/java/java深入源码级的面试题/7_修改对象A的equals方法的签名，那么使用HashMap存放这个对象实例的时候，会调用哪个equals方法？.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/source/8_Java中String的了解.md" afterPath="$PROJECT_DIR$/web/java/java深入源码级的面试题/8_Java中String的了解.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/source/9_说一下泛型原理，并举例说明.md" afterPath="$PROJECT_DIR$/web/java/java深入源码级的面试题/9_说一下泛型原理，并举例说明.md" />
+      <change beforePath="$PROJECT_DIR$/web/java/source/base.json" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,8 +111,13 @@
         <option value="$PROJECT_DIR$/web/java/source/base.json" />
         <option value="$PROJECT_DIR$/web/result/result.json" />
         <option value="$PROJECT_DIR$/web/result/面试经历.md" />
-        <option value="$PROJECT_DIR$/web/api/web.json" />
         <option value="$PROJECT_DIR$/web/result/result1.json" />
+        <option value="$PROJECT_DIR$/web/api/web.json" />
+        <option value="$PROJECT_DIR$/web/java/java基础面试知识点/base.json" />
+        <option value="$PROJECT_DIR$/web/java/java深入源码级的面试题/base.json" />
+        <option value="$PROJECT_DIR$/web/android/Android基础知识点/base.json" />
+        <option value="$PROJECT_DIR$/web/android/架构设计和设计模式/base.json" />
+        <option value="$PROJECT_DIR$/web/android/网络和安全机制/base.json" />
       </list>
     </option>
   </component>
@@ -73,7 +142,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -81,12 +149,45 @@
               <item name="InterView" type="b2602c69:ProjectViewProjectNode" />
               <item name="InterView" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="InterView" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InterView" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InterView" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InterView" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InterView" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InterView" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="多线程和线程池" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InterView" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InterView" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="并发编程有关知识点" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InterView" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InterView" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="数据结构" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -94,16 +195,18 @@
     <property name="android.sdk.path" value="C:/sdk" />
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1522231584013" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1522293301840" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\thinkpad\Documents\GitHub\InterView\web\android\图片处理技术" />
+      <recent name="C:\Users\thinkpad\Documents\GitHub\InterView\web\android\NDK-jni-Binder-AIDL-进程通信有关" />
+      <recent name="C:\Users\thinkpad\Documents\GitHub\InterView\web\android\framework层-ROM定制-Ubuntu-Linux之类的问题" />
+      <recent name="C:\Users\thinkpad\Documents\GitHub\InterView\web\android\Android源码相关分析" />
       <recent name="C:\Users\thinkpad\Documents\GitHub\InterView\web\result" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\thinkpad\Documents\GitHub\InterView\web\result" />
-      <recent name="C:\Users\thinkpad\Documents\GitHub\InterView\web\java\base" />
-      <recent name="C:\Users\thinkpad\Documents\GitHub\InterView\web\android\base" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -650,7 +753,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21374045" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36946565" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -679,7 +782,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/java/base/10_接口的意义.md" />
+    <entry file="file://$PROJECT_DIR$/web/java/java基础面试知识点/10_接口的意义.md" />
     <entry file="file://$PROJECT_DIR$/web/api/web.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -687,7 +790,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/java/base/base.json">
+    <entry file="file://$PROJECT_DIR$/web/java/java基础面试知识点/base.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
@@ -695,27 +798,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/java/base/Object类有哪些方法.html" />
-    <entry file="file://$PROJECT_DIR$/web/android/base/四大组件是什么.md" />
-    <entry file="file://$PROJECT_DIR$/web/android/base/base.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/android/Android基础知识点/四大组件是什么.md" />
     <entry file="file://$PROJECT_DIR$/web/java/base/Object类有哪些方法.md" />
     <entry file="file://$PROJECT_DIR$/README.md" />
-    <entry file="file://$PROJECT_DIR$/web/java/base/5_探探对java多态的理解.md" />
-    <entry file="file://$PROJECT_DIR$/web/java/base/4_String、StringBuffer、StringBuilder区别.md" />
-    <entry file="file://$PROJECT_DIR$/web/java/base/3_java中==和equals和hashCode的区别.md" />
-    <entry file="file://$PROJECT_DIR$/web/java/base/0_Object类有哪些方法.md" />
-    <entry file="file://$PROJECT_DIR$/web/java/base/2_int与integer的区别.md" />
-    <entry file="file://$PROJECT_DIR$/web/java/base/1_int、char、long各占多少字节数（标准32位系统）.md" />
-    <entry file="file://$PROJECT_DIR$/web/java/base/6_什么是内部类？内部类的作用.md" />
-    <entry file="file://$PROJECT_DIR$/web/java/base/7_抽象类和接口区别.md" />
-    <entry file="file://$PROJECT_DIR$/web/java/base/8_抽象类的意义.md" />
-    <entry file="file://$PROJECT_DIR$/web/java/base/9_抽象类是否可以没有方法和属性.md" />
-    <entry file="file://$PROJECT_DIR$/web/java/base/10_接口的意义.md" />
+    <entry file="file://$PROJECT_DIR$/web/java/java基础面试知识点/5_探探对java多态的理解.md" />
+    <entry file="file://$PROJECT_DIR$/web/java/java基础面试知识点/4_String、StringBuffer、StringBuilder区别.md" />
+    <entry file="file://$PROJECT_DIR$/web/java/java基础面试知识点/3_java中==和equals和hashCode的区别.md" />
+    <entry file="file://$PROJECT_DIR$/web/java/java基础面试知识点/0_Object类有哪些方法.md" />
+    <entry file="file://$PROJECT_DIR$/web/java/java基础面试知识点/2_int与integer的区别.md" />
+    <entry file="file://$PROJECT_DIR$/web/java/java基础面试知识点/1_int、char、long各占多少字节数（标准32位系统）.md" />
+    <entry file="file://$PROJECT_DIR$/web/java/java基础面试知识点/6_什么是内部类？内部类的作用.md" />
+    <entry file="file://$PROJECT_DIR$/web/java/java基础面试知识点/7_抽象类和接口区别.md" />
+    <entry file="file://$PROJECT_DIR$/web/java/java基础面试知识点/8_抽象类的意义.md" />
+    <entry file="file://$PROJECT_DIR$/web/java/java基础面试知识点/9_抽象类是否可以没有方法和属性.md" />
+    <entry file="file://$PROJECT_DIR$/web/java/java基础面试知识点/10_接口的意义.md" />
     <entry file="file://$PROJECT_DIR$/web/路径说明.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -723,35 +819,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/java/source/1_哪些情况下的对象会被垃圾回收机制处理掉？.md" />
-    <entry file="file://$PROJECT_DIR$/web/java/base/base.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/java/source/base.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="6" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="56" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/java/java深入源码级的面试题/1_哪些情况下的对象会被垃圾回收机制处理掉？.md" />
     <entry file="file://$PROJECT_DIR$/web/result/面试经历.md" />
-    <entry file="file://$PROJECT_DIR$/web/api/web.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="98" column="28" lean-forward="true" selection-start-line="98" selection-start-column="28" selection-end-line="98" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/result/result.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -759,6 +832,101 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
           <caret line="85" column="5" lean-forward="false" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/api/web.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="97" column="9" lean-forward="true" selection-start-line="97" selection-start-column="9" selection-end-line="97" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/android/Android基础知识点/base.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/android/framework层-ROM定制-Ubuntu-Linux之类的问题/base.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/android/NDK-jni-Binder-AIDL-进程通信有关/base.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/java/java基础面试知识点/base.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="88" column="32" lean-forward="false" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/java/java深入源码级的面试题/base.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="71" column="3" lean-forward="true" selection-start-line="71" selection-start-column="3" selection-end-line="71" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/android/图片处理技术/base.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/android/Android源码相关分析/base.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/android/架构设计和设计模式/base.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/android/网络和安全机制/Android手机App安全漏洞整理.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/android/网络和安全机制/base.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/android/数据库/base.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
           <folding />
         </state>
       </provider>

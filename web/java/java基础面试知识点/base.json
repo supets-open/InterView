@@ -1,0 +1,92 @@
+{
+  "data": [
+    {
+      "name": "0_Object类有哪些方法",
+      "path": "/java/java基础面试知识点/0_Object类有哪些方法.md"
+    },
+    {
+      "name": "1_int、char、long各占多少字节数（标准32位系统）",
+      "path": "/java/java基础面试知识点/1_int、char、long各占多少字节数（标准32位系统）.md"
+    },
+    {
+      "name": "2_int与integer的区别",
+      "path": "/java/java基础面试知识点/2_int与integer的区别.md"
+    },
+    {
+      "name": "3_java中==和equals和hashCode的区别",
+      "path": "/java/java基础面试知识点/3_java中==和equals和hashCode的区别.md"
+    },
+    {
+      "name": "4_String、StringBuffer、StringBuilder区别",
+      "path": "/java/java基础面试知识点/4_String、StringBuffer、StringBuilder区别.md"
+    },
+    {
+      "name": "5_探探对java多态的理解",
+      "path": "/java/java基础面试知识点/5_探探对java多态的理解.md"
+    },
+    {
+      "name": "6_什么是内部类？内部类的作用",
+      "path": "/java/java基础面试知识点/6_什么是内部类？内部类的作用.md"
+    },
+    {
+      "name": "7_抽象类和接口区别",
+      "path": "/java/java基础面试知识点/7_抽象类和接口区别.md"
+    },
+    {
+      "name": "8_抽象类的意义",
+      "path": "/java/java基础面试知识点/8_抽象类的意义.md"
+    },
+    {
+      "name": "9_抽象类是否可以没有方法和属性",
+      "path": "/java/java基础面试知识点/9_抽象类是否可以没有方法和属性.md"
+    },
+    {
+      "name": "10_接口的意义",
+      "path": "/java/java基础面试知识点/10_接口的意义.md"
+    },
+    {
+      "name": "11_泛型中extends和super的区别",
+      "path": "/java/java基础面试知识点/11_泛型中extends和super的区别.md"
+    },
+    {
+      "name": "12_父类的静态方法能否被子类重写",
+      "path": "/java/java基础面试知识点/12_父类的静态方法能否被子类重写.md"
+    },
+    {
+      "name": "13_进程和线程的区别",
+      "path": "/java/java基础面试知识点/13_进程和线程的区别.md"
+    },
+    {
+      "name": "14_final，finally，finalize的区别",
+      "path": "/java/java基础面试知识点/14_final，finally，finalize的区别.md"
+    },
+    {
+      "name": "15_序列化的方式",
+      "path": "/java/java基础面试知识点/15_序列化的方式.md"
+    },
+    {
+      "name": "16_Serializable 和Parcelable 的区别",
+      "path": "/java/java基础面试知识点/16_Serializable 和Parcelable 的区别.md"
+    },
+    {
+      "name": "17_静态属性和静态方法是否可以被继承？是否可以被重写？以及原因？",
+      "path": "/java/java基础面试知识点/17_静态属性和静态方法是否可以被继承？是否可以被重写？以及原因？.md"
+    },
+    {
+      "name": "18_静态内部类的设计意图",
+      "path": "/java/java基础面试知识点/18_静态内部类的设计意图.md"
+    },
+    {
+      "name": "19_闭包和局部内部类的区别",
+      "path": "/java/java基础面试知识点/19_闭包和局部内部类的区别.md"
+    },
+    {
+      "name": "20_谈谈对kotlin的理解",
+      "path": "/java/java基础面试知识点/20_谈谈对kotlin的理解.md"
+    },
+    {
+      "name": "21_string 转换成 integer的方式及原理",
+      "path": "/java/java基础面试知识点/21_string 转换成 integer的方式及原理.md"
+    }
+  ]
+}
