@@ -3,6 +3,10 @@
     {
       "name": "图说设计模式",
       "path": "http://design-patterns.readthedocs.io/zh_CN/latest/index.html"
+    },
+	{
+      "name": "目录",
+      "path": "/android/架构设计和设计模式/目录.md"
     }
   ]
 }
