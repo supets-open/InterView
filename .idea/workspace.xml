@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="021edff3-50ca-45e6-9689-754feda00050" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/java/多线程和线程池/开启线程的三种方式.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/java/并发编程有关知识点/java内存模型.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/java/并发编程有关知识点/并发编程.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/java/并发编程有关知识点/线程状态.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/java/并发编程有关知识点/锁.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/java/数据结构/1_常用数据结构简介.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/java/数据结构/2_集合框架完全解析.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/java/数据结构/3_List,Set,Map的区别.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/java/数据结构/4_list与Set、Map区别及适用场景.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/java/数据结构/5_List和Map的实现方式以及存储方式.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/java/数据结构/6_HashMap问题.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/java/数据结构/7_堆栈.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/result/大牛网站/base.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/result/大牛网站/极客学院.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/java/数据结构/7_什么是深拷贝和浅拷贝.md" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/web/api/web.json" afterPath="$PROJECT_DIR$/web/api/web.json" />
-      <change beforePath="$PROJECT_DIR$/web/java/并发编程有关知识点/base.json" afterPath="$PROJECT_DIR$/web/java/并发编程有关知识点/base.json" />
-      <change beforePath="$PROJECT_DIR$/web/java/数据结构/base.json" afterPath="$PROJECT_DIR$/web/java/数据结构/base.json" />
-      <change beforePath="$PROJECT_DIR$/web/result/公司面试/base.json" afterPath="$PROJECT_DIR$/web/result/公司面试/base.json" />
-      <change beforePath="$PROJECT_DIR$/web/result/面试经历.md" afterPath="$PROJECT_DIR$/web/result/公司面试/面试经历.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -124,13 +106,6 @@
               <item name="InterView" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="多线程和线程池" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InterView" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InterView" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="数据结构" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -146,7 +121,7 @@
     <property name="android.sdk.path" value="C:/sdk" />
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1522381320829" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1522382022375" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -716,7 +691,14 @@
       <option name="project" value="LOCAL" />
       <updated>1522304769655</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="init">
+      <created>1522381416353</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1522381416353</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TodoView">
