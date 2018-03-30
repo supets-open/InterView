@@ -1,12 +1,20 @@
 {
   "data": [
     {
-      "name": "四大组件是什么",
-      "path": "/android/Android基础知识点/四大组件是什么.md"
+      "name": "java内存模型",
+      "path": "/java/并发编程有关知识点/java内存模型.md"
     },
     {
-      "name": "Handler机制原理",
-      "path": "/android/Android基础知识点/Handler机制原理.md"
+      "name": "并发编程",
+      "path": "/java/并发编程有关知识点/并发编程.md"
+    },
+    {
+      "name": "锁",
+      "path": "/java/并发编程有关知识点/锁.md"
+    },
+    {
+      "name": "线程状态",
+      "path": "/java/并发编程有关知识点/线程状态.md"
     }
   ]
 }
