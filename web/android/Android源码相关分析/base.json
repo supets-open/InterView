@@ -1,8 +1,125 @@
 {
   "data": [
     {
-      "name": "目录",
-      "path": "/android/Android源码相关分析/目录.md"
+      "name": "1、Android动画框架实现原理",
+      "path": "/android/Android源码相关分析/1、Android动画框架实现原理.md"
+    },
+	{
+      "name": "2、Android各个版本API的区别",
+      "path": "/android/Android源码相关分析/2、Android各个版本API的区别.md"
+    },
+	{
+      "name": "3、Requestlayout，onlayout，onDraw，DrawChild区别与联系",
+      "path": "/android/Android源码相关分析/3、Requestlayout，onlayout，onDraw，DrawChild区别与联系.md"
+    },
+	{
+      "name": "4、invalidate和postInvalidate的区别及使用",
+      "path": "/android/Android源码相关分析/4、invalidate和postInvalidate的区别及使用.md"
+    },
+	{
+      "name": "5、Activity-Window-View三者的差别",
+      "path": "/android/Android源码相关分析/5、Activity-Window-View三者的差别.md"
+    },
+	{
+      "name": "6、谈谈对Volley的理解",
+      "path": "/android/Android源码相关分析/6、谈谈对Volley的理解.md"
+    },
+	{
+      "name": "7、如何优化自定义View",
+      "path": "/android/Android源码相关分析/7、如何优化自定义View.md"
+    },
+	{
+      "name": "8、低版本SDK如何实现高版本api？",
+      "path": "/android/Android源码相关分析/8、低版本SDK如何实现高版本api？.md"
+    },
+	{
+      "name": "9、描述一次网络请求的流程",
+      "path": "/android/Android源码相关分析/9、描述一次网络请求的流程.md"
+    },
+	{
+      "name": "10、HttpUrlConnection 和 okhttp关系",
+      "path": "/android/Android源码相关分析/10、HttpUrlConnection 和 okhttp关系.md"
+    },
+	{
+      "name": "11、Bitmap对象的理解",
+      "path": "/android/Android源码相关分析/11、Bitmap对象的理解.md"
+    },
+	{
+      "name": "12、looper架构",
+      "path": "/android/Android源码相关分析/12、looper架构.md"
+    },
+	{
+      "name": "13、ActivityThread，AMS，WMS的工作原理",
+      "path": "/android/Android源码相关分析/13、ActivityThread，AMS，WMS的工作原理.md"
+    },
+	{
+      "name": "14、自定义View如何考虑机型适配",
+      "path": "/android/Android源码相关分析/14、自定义View如何考虑机型适配.md"
+    },
+	{
+      "name": "15、自定义View的事件",
+      "path": "/android/Android源码相关分析/15、自定义View的事件.md"
+    },
+	{
+      "name": "16、AstncTask+HttpClient 与 AsyncHttpClient有什么区别？",
+      "path": "/android/Android源码相关分析/16、AstncTask+HttpClient 与 AsyncHttpClient有什么区别？.md"
+    },
+	{
+      "name": "17、LaunchMode应用场景",
+      "path": "/android/Android源码相关分析/17、LaunchMode应用场景.md"
+    },
+	{
+      "name": "18、AsyncTask 如何使用",
+      "path": "/android/Android源码相关分析/18、AsyncTask 如何使用.md"
+    },
+	{
+      "name": "19、SpareArray原理",
+      "path": "/android/Android源码相关分析/19、SpareArray原理.md"
+    },
+	{
+      "name": "20、请介绍下ContentProvider 是如何实现数据共享的？",
+      "path": "/android/Android源码相关分析/20、请介绍下ContentProvider 是如何实现数据共享的？.md"
+    },
+	{
+      "name": "21、AndroidService与Activity之间通信的几种方式",
+      "path": "/android/Android源码相关分析/21、AndroidService与Activity之间通信的几种方式.md"
+    },
+	{
+      "name": "22、IntentService原理及作用是什么？",
+      "path": "/android/Android源码相关分析/22、IntentService原理及作用是什么？.md"
+    },
+	{
+      "name": "23、说说Activity、Intent、Service",
+      "path": "/android/Android源码相关分析/23、说说Activity、Intent、Service.md"
+    },
+	{
+      "name": "24、ApplicationContext和ActivityContext的区别",
+      "path": "/android/Android源码相关分析/24、ApplicationContext和ActivityContext的区别.md"
+    },
+	{
+      "name": "25、SP是进程同步的吗有什么方法做到同步？",
+      "path": "/android/Android源码相关分析/25、SP是进程同步的吗有什么方法做到同步？.md"
+    },
+	{
+      "name": "26、谈谈多线程在Android中的使用",
+      "path": "/android/Android源码相关分析/26、谈谈多线程在Android中的使用.md"
+    },
+	{
+      "name": "27、进程和 Application 的生命周期",
+      "path": "/android/Android源码相关分析/27、进程和 Application 的生命周期.md"
+    },
+	{
+      "name": "28、封装View的时候怎么知道view的大小",
+      "path": "/android/Android源码相关分析/28、封装View的时候怎么知道view的大小.md"
+    },
+	{
+      "name": "29、RecycleView原理",
+      "path": "/android/Android源码相关分析/29、RecycleView原理.md"
+    },
+	{
+      "name": "30、AndroidManifest的作用与理解",
+      "path": "/android/Android源码相关分析/30、AndroidManifest的作用与理解.md"
     }
   ]
 }
+

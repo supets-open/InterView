@@ -1,12 +1,172 @@
 {
   "data": [
     {
-      "name": "Handler机制原理",
-      "path": "/android/Android基础知识点/Handler机制原理.md"
+      "name": "0. Handler机制原理",
+      "path": "/android/Android基础知识点/0. Handler机制原理.md"
     },
     {
-      "name": "题目",
-      "path": "/android/Android基础知识点/题目.md"
+      "name": "1，四大组件",
+      "path": "/android/Android基础知识点/1，四大组件.md"
+    },
+    {
+      "name": "2，四大组件的生命周期和简单用法",
+      "path": "/android/Android基础知识点/2，四大组件的生命周期和简单用法.md"
+    },
+    {
+      "name": "3，Activity之间的通信方式",
+      "path": "/android/Android基础知识点/3，Activity之间的通信方式.md"
+    },
+    {
+      "name": "4，Activity各种情况下的生命周期",
+      "path": "/android/Android基础知识点/4，Activity各种情况下的生命周期.md"
+    },
+    {
+      "name": "5，横竖屏切换的时候，Activity各种情况下的生命周期",
+      "path": "/android/Android基础知识点/5，横竖屏切换的时候，Activity各种情况下的生命周期.md"
+    },
+    {
+      "name": "6，Activity与Fragment之间生命周期比较",
+      "path": "/android/Android基础知识点/6，Activity与Fragment之间生命周期比较.md"
+    },
+    {
+      "name": "7，Activity上有Dialog的时候按Home键时的生命周期",
+      "path": "/android/Android基础知识点/7，Activity上有Dialog的时候按Home键时的生命周期.md"
+    },
+    {
+      "name": "8，两个Activity之间跳转时必然会执行的是哪几个方法？",
+      "path": "/android/Android基础知识点/8，两个Activity之间跳转时必然会执行的是哪几个方法？.md"
+    },
+    {
+      "name": "9，前台切换到后台，然后再回到前台，activity生命周期回调方法。弹出Dialog",
+      "path": "/android/Android基础知识点/9，前台切换到后台，然后再回到前台，activity生命周期回调方法。弹出Dialog.md"
+    },
+    {
+      "name": "10，activity的四种启动模式对比",
+      "path": "/android/Android基础知识点/10，activity的四种启动模式对比.md"
+    },
+    {
+      "name": "11，activity状态保存与恢复",
+      "path": "/android/Android基础知识点/11，activity状态保存与恢复.md"
+    },
+    {
+      "name": "12，Fragment各种情况下的生命周期",
+      "path": "/android/Android基础知识点/12，Fragment各种情况下的生命周期.md"
+    },
+    {
+      "name": "13，Fragment状态保存startActivityForResult是哪个类的方法，在什么情况下使用？",
+      "path": "/android/Android基础知识点/13，Fragment状态保存startActivityForResult是哪个类的方法，在什么情况下使用？.md"
+    },
+    {
+      "name": "14，如何实现Fragment的滑动？",
+      "path": "/android/Android基础知识点/14，如何实现Fragment的滑动？.md"
+    },
+    {
+      "name": "15，Fragment之间传递数据的方式？",
+      "path": "/android/Android基础知识点/15，Fragment之间传递数据的方式？.md"
+    },
+    {
+      "name": "16，Activity怎么和Service绑定？",
+      "path": "/android/Android基础知识点/16，Activity怎么和Service绑定？.md"
+    },
+    {
+      "name": "17，怎么在Activity中启动自己对应的Service？",
+      "path": "/android/Android基础知识点/17，怎么在Activity中启动自己对应的Service？.md"
+    },
+    {
+      "name": "18，service和activity怎么进行数据交互？",
+      "path": "/android/Android基础知识点/18，service和activity怎么进行数据交互？.md"
+    },
+    {
+      "name": "19，service的开启方式",
+      "path": "/android/Android基础知识点/19，service的开启方式.md"
+    },
+    {
+      "name": "20，请描述一下service的生命周期",
+      "path": "/android/Android基础知识点/20，请描述一下service的生命周期.md"
+    },
+    {
+      "name": "21，谈谈你对ContentProvider的理解",
+      "path": "/android/Android基础知识点/21，谈谈你对ContentProvider的理解.md"
+    },
+    {
+      "name": "22，说说ContentProvider、ContentResolver、ContentObserver之间的关系",
+      "path": "/android/Android基础知识点/22，说说ContentProvider、ContentResolver、ContentObserver之间的关系.md"
+    },
+    {
+      "name": "23，请描述一下广播BroadcastReceiver的理解",
+      "path": "/android/Android基础知识点/23，请描述一下广播BroadcastReceiver的理解.md"
+    },
+    {
+      "name": "24，广播的分类",
+      "path": "/android/Android基础知识点/24，广播的分类.md"
+    },
+    {
+      "name": "25，广播使用的方式和场景",
+      "path": "/android/Android基础知识点/25，广播使用的方式和场景.md"
+    },
+    {
+      "name": "26，在manifest和代码中如何注册和使用BroadcastReceiver",
+      "path": "/android/Android基础知识点/26，在manifest和代码中如何注册和使用BroadcastReceiver.md"
+    },
+    {
+      "name": "27，本地广播和全局广播有什么差别？",
+      "path": "/android/Android基础知识点/27，本地广播和全局广播有什么差别？.md"
+    },
+    {
+      "name": "28，BroadcastReceiver,LocalBroadcastReceiver区别",
+      "path": "/android/Android基础知识点/28，BroadcastReceiver,LocalBroadcastReceiver区别.md"
+    },
+    {
+      "name": "29，AlertDialog,popupWindow,Activity区别",
+      "path": "/android/Android基础知识点/29，AlertDialog,popupWindow,Activity区别.md"
+    },
+    {
+      "name": "30，Application和Activity的Context对象的区别",
+      "path": "/android/Android基础知识点/30，Application和Activity的Context对象的区别.md"
+    },
+    {
+      "name": "31，Android属性动画特性",
+      "path": "/android/Android基础知识点/31，Android属性动画特性.md"
+    },
+    {
+      "name": "32，如何导入外部数据库？",
+      "path": "/android/Android基础知识点/32，如何导入外部数据库？.md"
+    },
+    {
+      "name": "33，LinearLayout、RelativeLayout、FrameLayout的特性及对比，并介绍使用场景",
+      "path": "/android/Android基础知识点/33，LinearLayout、RelativeLayout、FrameLayout的特性及对比，并介绍使用场景.md"
+    },
+    {
+      "name": "34，谈谈对接口与回调的理解",
+      "path": "/android/Android基础知识点/34，谈谈对接口与回调的理解.md"
+    },
+    {
+      "name": "35，回调的原理",
+      "path": "/android/Android基础知识点/35，回调的原理.md"
+    },
+    {
+      "name": "37，介绍下SurfView",
+      "path": "/android/Android基础知识点/37，介绍下SurfView.md"
+    },
+    {
+      "name": "38，RecycleView的使用",
+      "path": "/android/Android基础知识点/38，RecycleView的使用.md"
+    },
+    {
+      "name": "39，序列化的作用，以及Android两种序列化的区别",
+      "path": "/android/Android基础知识点/39，序列化的作用，以及Android两种序列化的区别.md"
+    },
+    {
+      "name": "40，差值器",
+      "path": "/android/Android基础知识点/40，差值器.md"
+    },
+    {
+      "name": "41，估值器",
+      "path": "/android/Android基础知识点/41，估值器.md"
+    },
+    {
+      "name": "42，Android中数据存储方式",
+      "path": "/android/Android基础知识点/42，Android中数据存储方式.md"
     }
   ]
 }
