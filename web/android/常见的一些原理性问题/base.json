@@ -1,8 +1,131 @@
 {
   "data": [
     {
-      "name": "目录",
-      "path": "/android/常见的一些原理性问题/目录.md"
+      "name": "1、Handler机制和底层实现",
+      "path": "/android/常见的一些原理性问题/1、Handler机制和底层实现.md"
+    },{
+      "name": "2、Handler、Thread和HandlerThread的差别",
+      "path": "/android/常见的一些原理性问题/2、Handler、Thread和HandlerThread的差别.md"
+    },{
+      "name": "3、handler发消息给子线程，looper怎么启动？",
+      "path": "/android/常见的一些原理性问题/3、handler发消息给子线程，looper怎么启动？.md"
+    },{
+      "name": "4、关于Handler，在任何地方new Handler 都是什么线程下",
+      "path": "/android/常见的一些原理性问题/4、关于Handler，在任何地方new Handler 都是什么线程下.md"
+    },{
+      "name": "5、ThreadLocal原理，实现及如何保证Local属性",
+      "path": "/android/常见的一些原理性问题/5、ThreadLocal原理，实现及如何保证Local属性.md"
+    },{
+      "name": "6、请解释下在单线程模型中Message、Handler、Message Queue、Looper之间的关系",
+      "path": "/android/常见的一些原理性问题/6、请解释下在单线程模型中Message、Handler、Message Queue、Looper之间的关系.md"
+    },{
+      "name": "7、请描述一下View事件传递分发机制",
+      "path": "/android/常见的一些原理性问题/7、请描述一下View事件传递分发机制.md"
+    },{
+      "name": "8、Touch事件传递流程",
+      "path": "/android/常见的一些原理性问题/8、Touch事件传递流程.md"
+    },{
+      "name": "9、事件分发中的onTouch 和onTouchEvent 有什么区别，又该如何使用",
+      "path": "/android/常见的一些原理性问题/9、事件分发中的onTouch 和onTouchEvent 有什么区别，又该如何使用.md"
+    },{
+      "name": "10、View和ViewGroup分别有哪些事件分发相关的回调方法",
+      "path": "/android/常见的一些原理性问题/10、View和ViewGroup分别有哪些事件分发相关的回调方法.md"
+    },{
+      "name": "11、View刷新机制",
+      "path": "/android/常见的一些原理性问题/11、View刷新机制.md"
+    },{
+      "name": "12、View绘制流程",
+      "path": "/android/常见的一些原理性问题/12、View绘制流程.md"
+    },{
+      "name": "13、自定义控件原理",
+      "path": "/android/常见的一些原理性问题/13、自定义控件原理.md"
+    },{
+      "name": "14、自定义View如何提供获取View属性的接口？",
+      "path": "/android/常见的一些原理性问题/14、自定义View如何提供获取View属性的接口？.md"
+    },{
+      "name": "15、Android代码中实现WAP方式联网",
+      "path": "/android/常见的一些原理性问题/15、Android代码中实现WAP方式联网.md"
+    },{
+      "name": "16、AsyncTask机制",
+      "path": "/android/常见的一些原理性问题/16、AsyncTask机制.md"
+    },{
+      "name": "17、AsyncTask原理及不足",
+      "path": "/android/常见的一些原理性问题/17、AsyncTask原理及不足.md"
+    },{
+      "name": "18、如何取消AsyncTask",
+      "path": "/android/常见的一些原理性问题/18、如何取消AsyncTask.md"
+    },{
+      "name": "19、为什么不能在子线程更新UI？",
+      "path": "/android/常见的一些原理性问题/19、为什么不能在子线程更新UI？.md"
+    },{
+      "name": "20、ANR产生的原因是什么？",
+      "path": "/android/常见的一些原理性问题/20、ANR产生的原因是什么？.md"
+    },{
+      "name": "21、ANR定位和修正",
+      "path": "/android/常见的一些原理性问题/21、ANR定位和修正.md"
+    },{
+      "name": "22、oom是什么？",
+      "path": "/android/常见的一些原理性问题/22、oom是什么？.md"
+    },{
+      "name": "23、什么情况导致oom",
+      "path": "/android/常见的一些原理性问题/23、什么情况导致oom.md"
+    },{
+      "name": "24、有什么解决方法可以避免OOM",
+      "path": "/android/常见的一些原理性问题/24、有什么解决方法可以避免OOM.md"
+    },{
+      "name": "25、Oom 是否可以try catch？为什么",
+      "path": "/android/常见的一些原理性问题/25、Oom 是否可以try catch？为什么.md"
+    },{
+      "name": "26、内存泄漏是什么？",
+      "path": "/android/常见的一些原理性问题/26、内存泄漏是什么？.md"
+    },{
+      "name": "27、什么情况导致内存泄漏？",
+      "path": "/android/常见的一些原理性问题/27、什么情况导致内存泄漏？.md"
+    },{
+      "name": "28、如何防止线程的内存泄漏",
+      "path": "/android/常见的一些原理性问题/28、如何防止线程的内存泄漏.md"
+    },{
+      "name": "29、内存泄露场的解决方法",
+      "path": "/android/常见的一些原理性问题/29、内存泄露场的解决方法.md"
+    },{
+      "name": "30、内存泄漏和内存溢出区别",
+      "path": "/android/常见的一些原理性问题/30、内存泄漏和内存溢出区别.md"
+    },{
+      "name": "31、LruCache默认缓存大小",
+      "path": "/android/常见的一些原理性问题/31、LruCache默认缓存大小.md"
+    },{
+      "name": "32、ContentProvider的权限管理",
+      "path": "/android/常见的一些原理性问题/32、ContentProvider的权限管理.md"
+    },{
+      "name": "33、如何通过广播拦截和abort一条短信",
+      "path": "/android/常见的一些原理性问题/33、如何通过广播拦截和abort一条短信.md"
+    },{
+      "name": "34、广播是否可以请求网络",
+      "path": "/android/常见的一些原理性问题/34、广播是否可以请求网络.md"
+    },{
+      "name": "35、广播引起anr的时间限制是多少",
+      "path": "/android/常见的一些原理性问题/35、广播引起anr的时间限制是多少.md"
+    },{
+      "name": "36、计算一个view的嵌套层级",
+      "path": "/android/常见的一些原理性问题/36、计算一个view的嵌套层级.md"
+    },{
+      "name": "37、Activity栈",
+      "path": "/android/常见的一些原理性问题/37、Activity栈.md"
+    },{
+      "name": "38、Android线程有没有上限",
+      "path": "/android/常见的一些原理性问题/38、Android线程有没有上限.md"
+    },{
+      "name": "39、线程池有没有上限",
+      "path": "/android/常见的一些原理性问题/39、线程池有没有上限.md"
+    },{
+      "name": "40、ListView重用的是什么",
+      "path": "/android/常见的一些原理性问题/40、ListView重用的是什么.md"
+    },{
+      "name": "41、Android为什么引入Parcelable",
+      "path": "/android/常见的一些原理性问题/41、Android为什么引入Parcelable.md"
+    },{
+      "name": "42、有没有尝试简化Parcelable的使用",
+      "path": "/android/常见的一些原理性问题/42、有没有尝试简化Parcelable的使用.md"
     }
   ]
 }

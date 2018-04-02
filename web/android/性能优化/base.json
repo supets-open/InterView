@@ -1,8 +1,80 @@
 {
   "data": [
     {
-      "name": "目录",
-      "path": "/android/性能优化/目录.md"
+      "name": "1、如何对Android 应用进行性能分析以及优化",
+      "path": "/android/性能优化/1、如何对Android 应用进行性能分析以及优化.md"
+    },
+	{
+      "name": "2、ddms 和 traceView",
+      "path": "/android/性能优化/2、ddms 和 traceView.md"
+    },
+	{
+      "name": "3、性能优化如何分析systrace",
+      "path": "/android/性能优化/3、性能优化如何分析systrace.md"
+    },
+	{
+      "name": "4、用IDE如何分析内存泄漏",
+      "path": "/android/性能优化/4、用IDE如何分析内存泄漏.md"
+    },
+	{
+      "name": "5、Java多线程引发的性能问题，怎么解决",
+      "path": "/android/性能优化/5、Java多线程引发的性能问题，怎么解决.md"
+    },
+	{
+      "name": "6、启动页白屏及黑屏解决",
+      "path": "/android/性能优化/6、启动页白屏及黑屏解决.md"
+    },
+	{
+      "name": "7、启动太慢怎么解决",
+      "path": "/android/性能优化/7、启动太慢怎么解决.md"
+    },
+	{
+      "name": "8、怎么保证应用启动不卡顿",
+      "path": "/android/性能优化/8、怎么保证应用启动不卡顿.md"
+    },
+	{
+      "name": "9、App启动崩溃异常捕捉",
+      "path": "/android/性能优化/9、App启动崩溃异常捕捉.md"
+    },
+	{
+      "name": "10、自定义View注意事项",
+      "path": "/android/性能优化/10、自定义View注意事项.md"
+    },
+	{
+      "name": "11、现在下载速度很慢,试从网络协议的角度分析原因,并优化(提示：网络的5层都可以涉及)。",
+      "path": "/android/性能优化/11、现在下载速度很慢,试从网络协议的角度分析原因,并优化(提示：网络的5层都可以涉及)。.md"
+    },
+	{
+      "name": "12、Https请求慢的解决办法（提示：DNS，携带数据，直接访问IP）如何保持应用的稳定性",
+      "path": "/android/性能优化/12、Https请求慢的解决办法（提示：DNS，携带数据，直接访问IP）如何保持应用的稳定性.md"
+    },
+	{
+      "name": "13、RecyclerView和ListView的性能对比",
+      "path": "/android/性能优化/13、RecyclerView和ListView的性能对比.md"
+    },
+	{
+      "name": "14、ListView的优化",
+      "path": "/android/性能优化/14、ListView的优化.md"
+    },
+	{
+      "name": "15、RecycleView优化",
+      "path": "/android/性能优化/15、RecycleView优化.md"
+    },
+	{
+      "name": "16、View渲染",
+      "path": "/android/性能优化/16、View渲染.md"
+    },
+	{
+      "name": "17、Bitmap如何处理大图，如一张30M的大图，如何预防OOM",
+      "path": "/android/性能优化/17、Bitmap如何处理大图，如一张30M的大图，如何预防OOM.md"
+    },
+	{
+      "name": "18、java中的四种引用的区别以及使用场景",
+      "path": "/android/性能优化/18、java中的四种引用的区别以及使用场景.md"
+    },
+	{
+      "name": "19、强引用置为null，会不会被回收",
+      "path": "/android/性能优化/19、强引用置为null，会不会被回收.md"
     }
   ]
 }

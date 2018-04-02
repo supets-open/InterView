@@ -106,6 +106,10 @@
         {
           "title": "4 大牛网站",
           "path": "/result/大牛网站/base.json"
+        },
+        {
+          "title": "4 扩展知识",
+          "path": "/result/扩展知识/base.json"
         }
       ]
     }

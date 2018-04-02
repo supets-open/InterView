@@ -1,8 +1,104 @@
 {
   "data": [
     {
-      "name": "目录",
-      "path": "/android/framework层-ROM定制-Ubuntu-Linux之类的问题/目录.md"
+      "name": "1、java虚拟机的特性",
+      "path": "/android/framework层-ROM定制-Ubuntu-Linux之类的问题/1、java虚拟机的特性.md"
+    },
+	{
+      "name": "2、谈谈对jvm的理解",
+      "path": "/android/framework层-ROM定制-Ubuntu-Linux之类的问题/2、谈谈对jvm的理解.md"
+    },
+	{
+      "name": "3、JVM内存区域，开线程影响哪块内存",
+      "path": "/android/framework层-ROM定制-Ubuntu-Linux之类的问题/3、JVM内存区域，开线程影响哪块内存.md"
+    },
+	{
+      "name": "4、对Dalvik、ART虚拟机有什么了解？",
+      "path": "/android/framework层-ROM定制-Ubuntu-Linux之类的问题/4、对Dalvik、ART虚拟机有什么了解？.md"
+    },
+	{
+      "name": "5、Art和Dalvik对比",
+      "path": "/android/framework层-ROM定制-Ubuntu-Linux之类的问题/5、Art和Dalvik对比.md"
+    },
+	{
+      "name": "6、虚拟机原理，如何自己设计一个虚拟机(内存管理，类加载，双亲委派)",
+      "path": "/android/framework层-ROM定制-Ubuntu-Linux之类的问题/6、虚拟机原理，如何自己设计一个虚拟机(内存管理，类加载，双亲委派).md"
+    },
+	{
+      "name": "7、谈谈你对双亲委派模型理解",
+      "path": "/android/framework层-ROM定制-Ubuntu-Linux之类的问题/7、谈谈你对双亲委派模型理解.md"
+    },
+	{
+      "name": "8、JVM内存模型，内存区域",
+      "path": "/android/framework层-ROM定制-Ubuntu-Linux之类的问题/8、JVM内存模型，内存区域.md"
+    },
+	{
+      "name": "9、类加载机制",
+      "path": "/android/framework层-ROM定制-Ubuntu-Linux之类的问题/9、类加载机制.md"
+    },
+	{
+      "name": "10、谈谈对ClassLoader(类加载器)的理解",
+      "path": "/android/framework层-ROM定制-Ubuntu-Linux之类的问题/10、谈谈对ClassLoader(类加载器)的理解.md"
+    },
+	{
+      "name": "11、谈谈对动态加载（OSGI）的理解",
+      "path": "/android/framework层-ROM定制-Ubuntu-Linux之类的问题/11、谈谈对动态加载（OSGI）的理解.md"
+    },
+	{
+      "name": "12、内存对象的循环引用及避免",
+      "path": "/android/framework层-ROM定制-Ubuntu-Linux之类的问题/12、内存对象的循环引用及避免.md"
+    },
+	{
+      "name": "13、内存回收机制、GC回收策略、GC原理时机以及GC对象",
+      "path": "/android/framework层-ROM定制-Ubuntu-Linux之类的问题/13、内存回收机制、GC回收策略、GC原理时机以及GC对象.md"
+    },
+	{
+      "name": "14、垃圾回收机制与调用System.gc()区别",
+      "path": "/android/framework层-ROM定制-Ubuntu-Linux之类的问题/14、垃圾回收机制与调用System.gc()区别.md"
+    },
+	{
+      "name": "15、Ubuntu编译安卓系统",
+      "path": "/android/framework层-ROM定制-Ubuntu-Linux之类的问题/15、Ubuntu编译安卓系统.md"
+    },
+	{
+      "name": "16、系统启动流程是什么？（提示：Zygote进程 – SystemServer进程 – 各种系统服务 – 应用进程）",
+      "path": "/android/framework层-ROM定制-Ubuntu-Linux之类的问题/16、系统启动流程是什么？（提示：Zygote进程 – SystemServer进程 – 各种系统服务 – 应用进程）.md"
+    },
+	{
+      "name": "17、大体说清一个应用程序安装到手机上时发生了什么",
+      "path": "/android/framework层-ROM定制-Ubuntu-Linux之类的问题/17、大体说清一个应用程序安装到手机上时发生了什么.md"
+    },
+	{
+      "name": "18、简述Activity启动全部过程",
+      "path": "/android/framework层-ROM定制-Ubuntu-Linux之类的问题/18、简述Activity启动全部过程.md"
+    },
+	{
+      "name": "19、App启动流程，从点击桌面开始",
+      "path": "/android/framework层-ROM定制-Ubuntu-Linux之类的问题/19、App启动流程，从点击桌面开始.md"
+    },
+	{
+      "name": "20、逻辑地址与物理地址，为什么使用逻辑地址？",
+      "path": "/android/framework层-ROM定制-Ubuntu-Linux之类的问题/20、逻辑地址与物理地址，为什么使用逻辑地址？.md"
+    },
+	{
+      "name": "21、Android为每个应用程序分配的内存大小是多少？",
+      "path": "/android/framework层-ROM定制-Ubuntu-Linux之类的问题/21、Android为每个应用程序分配的内存大小是多少？.md"
+    },
+	{
+      "name": "22、Android中进程内存的分配，能不能自己分配定额内存？",
+      "path": "/android/framework层-ROM定制-Ubuntu-Linux之类的问题/22、Android中进程内存的分配，能不能自己分配定额内存？.md"
+    },
+	{
+      "name": "23、进程保活的方式",
+      "path": "/android/framework层-ROM定制-Ubuntu-Linux之类的问题/23、进程保活的方式.md"
+    },
+	{
+      "name": "24、如何保证一个后台服务不被杀死？（相同问题：如何保证service在后台不被kill？）比较省电的方式是什么？",
+      "path": "/android/framework层-ROM定制-Ubuntu-Linux之类的问题/24、如何保证一个后台服务不被杀死？（相同问题：如何保证service在后台不被kill？）比较省电的方式是什么？.md"
+    },
+	{
+      "name": "25、App中唤醒其他进程的实现方式",
+      "path": "/android/framework层-ROM定制-Ubuntu-Linux之类的问题/25、App中唤醒其他进程的实现方式.md"
     }
   ]
 }

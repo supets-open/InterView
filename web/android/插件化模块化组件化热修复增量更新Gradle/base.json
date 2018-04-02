@@ -1,8 +1,23 @@
 {
   "data": [
     {
-      "name": "目录",
-      "path": "/android/插件化模块化组件化热修复增量更新Gradle/目录.md"
+      "name": "1、对热修复和插件化的理解",
+      "path": "/android/插件化模块化组件化热修复增量更新Gradle/1、对热修复和插件化的理解.md"
+    }, {
+      "name": "2、插件化原理分析",
+      "path": "/android/插件化模块化组件化热修复增量更新Gradle/2、插件化原理分析.md"
+    }, {
+      "name": "3、模块化实现（好处，原因）",
+      "path": "/android/插件化模块化组件化热修复增量更新Gradle/3、模块化实现（好处，原因）.md"
+    }, {
+      "name": "4、热修复,插件化",
+      "path": "/android/插件化模块化组件化热修复增量更新Gradle/4、热修复,插件化.md"
+    }, {
+      "name": "5、项目组件化的理解",
+      "path": "/android/插件化模块化组件化热修复增量更新Gradle/5、项目组件化的理解.md"
+    }, {
+      "name": "6、描述清点击 Android Studio 的 build 按钮后发生了什么",
+      "path": "/android/插件化模块化组件化热修复增量更新Gradle/6、描述清点击 Android Studio 的 build 按钮后发生了什么md"
     }
   ]
 }

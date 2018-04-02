@@ -5,8 +5,92 @@
       "path": "/android/网络和安全机制/Android手机App安全漏洞整理.md"
     },
 	 {
-      "name": "目录",
-      "path": "/android/网络和安全机制/目录.md"
+      "name": "1、网络框架对比和源码分析",
+      "path": "/android/网络和安全机制/1、网络框架对比和源码分析.md"
+    },
+	 {
+      "name": "2、自己去设计网络请求框架，怎么做",
+      "path": "/android/网络和安全机制/2、自己去设计网络请求框架，怎么做.md"
+    },
+	 {
+      "name": "3、okhttp源码",
+      "path": "/android/网络和安全机制/3、okhttp源码.md"
+    },
+	 {
+      "name": "4、网络请求缓存处理，okhttp如何处理网络缓存的",
+      "path": "/android/网络和安全机制/4、网络请求缓存处理，okhttp如何处理网络缓存的.md"
+    },
+	 {
+      "name": "5、从网络加载一个10M的图片，说下注意事项",
+      "path": "/android/网络和安全机制/5、从网络加载一个10M的图片，说下注意事项.md"
+    },
+	 {
+      "name": "6、TCP的3次握手和四次挥手",
+      "path": "/android/网络和安全机制/6、TCP的3次握手和四次挥手.md"
+    },
+	 {
+      "name": "7、TCP与UDP的区别",
+      "path": "/android/网络和安全机制/7、TCP与UDP的区别.md"
+    },
+	 {
+      "name": "8、TCP与UDP的应用",
+      "path": "/android/网络和安全机制/8、TCP与UDP的应用.md"
+    },
+	 {
+      "name": "9、HTTP协议",
+      "path": "/android/网络和安全机制/9、HTTP协议.md"
+    },
+	 {
+      "name": "10、HTTP1.0与2.0的区别",
+      "path": "/android/网络和安全机制/10、HTTP1.0与2.0的区别.md"
+    },
+	 {
+      "name": "11、HTTP报文结构",
+      "path": "/android/网络和安全机制/11、HTTP报文结构.md"
+    },
+	 {
+      "name": "12、HTTP与HTTPS的区别以及如何实现安全性",
+      "path": "/android/网络和安全机制/12、HTTP与HTTPS的区别以及如何实现安全性.md"
+    },
+	 {
+      "name": "13、如何验证证书的合法性",
+      "path": "/android/网络和安全机制/13、如何验证证书的合法性.md"
+    },
+	 {
+      "name": "14、https中哪里用了对称加密，哪里用了非对称加密，对加密算法（如RSA）等是否有了解",
+      "path": "/android/网络和安全机制/14、https中哪里用了对称加密，哪里用了非对称加密，对加密算法（如RSA）等是否有了解.md"
+    },
+	 {
+      "name": "15、client如何确定自己发送的消息被server收到",
+      "path": "/android/网络和安全机制/15、client如何确定自己发送的消息被server收到.md"
+    },
+	 {
+      "name": "16、谈谈你对WebSocket的理解",
+      "path": "/android/网络和安全机制/16、谈谈你对WebSocket的理解.md"
+    },
+	 {
+      "name": "17、WebSocket与socket的区别",
+      "path": "/android/网络和安全机制/17、WebSocket与socket的区别.md"
+    },
+	 {
+      "name": "18、谈谈你对安卓签名的理解",
+      "path": "/android/网络和安全机制/18、谈谈你对安卓签名的理解.md"
+    },
+	 {
+      "name": "19、请解释安卓为啥要加签名机制",
+      "path": "/android/网络和安全机制/19、请解释安卓为啥要加签名机制.md"
+    },
+	 {
+      "name": "20、视频加密传输",
+      "path": "/android/网络和安全机制/20、视频加密传输.md"
+    },
+	 {
+      "name": "21、App 是如何沙箱化，为什么要这么做",
+      "path": "/android/网络和安全机制/21、App 是如何沙箱化，为什么要这么做.md"
+    },
+	 {
+      "name": "22、权限管理系统（底层的权限是如何进行 grant 的）",
+      "path": "/android/网络和安全机制/22、权限管理系统（底层的权限是如何进行 grant 的）.md"
     }
   ]
 }

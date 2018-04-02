@@ -1,8 +1,92 @@
 {
   "data": [
     {
-      "name": "目录",
-      "path": "/android/开发中常见的一些问题/目录.md"
+      "name": "1、ListView 中图片错位的问题是如何产生的",
+      "path": "/android/开发中常见的一些问题/1、ListView 中图片错位的问题是如何产生的.md"
+    },
+	{
+      "name": "2、混合开发有了解吗",
+      "path": "/android/开发中常见的一些问题/2、混合开发有了解吗.md"
+    },
+	{
+      "name": "3、知道哪些混合开发的方式？说出它们的优缺点和各自使用场景",
+      "path": "/android/开发中常见的一些问题/3、知道哪些混合开发的方式？说出它们的优缺点和各自使用场景.md"
+    },
+	{
+      "name": "4、屏幕适配的处理技巧都有哪些",
+      "path": "/android/开发中常见的一些问题/4、屏幕适配的处理技巧都有哪些.md"
+    },
+	{
+      "name": "5、服务器只提供数据接收接口，在多线程或多进程条件下，如何保证数据的有序到达？",
+      "path": "/android/开发中常见的一些问题/5、服务器只提供数据接收接口，在多线程或多进程条件下，如何保证数据的有序到达？.md"
+    },
+	{
+      "name": "6、动态布局的理解",
+      "path": "/android/开发中常见的一些问题/6、动态布局的理解.md"
+    },
+	{
+      "name": "7、怎么去除重复代码？",
+      "path": "/android/开发中常见的一些问题/7、怎么去除重复代码？.md"
+    },
+	{
+      "name": "8、画出 Android 的大体架构图",
+      "path": "/android/开发中常见的一些问题/8、画出 Android 的大体架构图.md"
+    },
+	{
+      "name": "9、Recycleview和ListView的区别",
+      "path": "/android/开发中常见的一些问题/9、Recycleview和ListView的区别.md"
+    },
+	{
+      "name": "10、ListView图片加载错乱的原理和解决方案",
+      "path": "/android/开发中常见的一些问题/10、ListView图片加载错乱的原理和解决方案.md"
+    },
+	{
+      "name": "11、动态权限适配方案，权限组的概念",
+      "path": "/android/开发中常见的一些问题/11、动态权限适配方案，权限组的概念.md"
+    },
+	{
+      "name": "12、Android系统为什么会设计ContentProvider",
+      "path": "/android/开发中常见的一些问题/12、Android系统为什么会设计ContentProvider.md"
+    },
+	{
+      "name": "13、下拉状态栏是不是影响activity的生命周期",
+      "path": "/android/开发中常见的一些问题/13、下拉状态栏是不是影响activity的生命周期.md"
+    },
+	{
+      "name": "14、如果在onStop的时候做了网络请求，onResume的时候怎么恢复",
+      "path": "/android/开发中常见的一些问题/14、如果在onStop的时候做了网络请求，onResume的时候怎么恢复.md"
+    },
+	{
+      "name": "15、Bitmap使用时候注意什么",
+      "path": "/android/开发中常见的一些问题/15、Bitmap使用时候注意什么.md"
+    },
+	{
+      "name": "16、Bitmap的recycler()",
+      "path": "/android/开发中常见的一些问题/16、Bitmap的recycler().md"
+    },
+	{
+      "name": "17、Android中开启摄像头的主要步骤",
+      "path": "/android/开发中常见的一些问题/17、Android中开启摄像头的主要步骤.md"
+    },
+	{
+      "name": "18、ViewPager使用细节，如何设置成每次只初始化当前的Fragment，其他的不初始化",
+      "path": "/android/开发中常见的一些问题/18、ViewPager使用细节，如何设置成每次只初始化当前的Fragment，其他的不初始化.md"
+    },
+	{
+      "name": "19、点击事件被拦截，但是想传到下面的View，如何操作",
+      "path": "/android/开发中常见的一些问题/19、点击事件被拦截，但是想传到下面的View，如何操作.md"
+    },
+	{
+      "name": "20、微信主页面的实现方式",
+      "path": "/android/开发中常见的一些问题/20、微信主页面的实现方式.md"
+    },
+	{
+      "name": "22、微信上消息小红点的原理",
+      "path": "/android/开发中常见的一些问题/22、微信上消息小红点的原理.md"
+    },
+	{
+      "name": "23、CAS介绍",
+      "path": "/android/开发中常见的一些问题/23、CAS介绍.md"
     }
   ]
 }
