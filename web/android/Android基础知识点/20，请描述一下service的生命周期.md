@@ -1,83 +1,41 @@
-1，四大组件
+[Service 生命周期](https://www.cnblogs.com/huihuizhang/p/7623760.html)
 
-2，四大组件的生命周期和简单用法
 
-3，Activity之间的通信方式
+![](https://images2017.cnblogs.com/blog/896629/201710/896629-20171003150906568-1811048252.png)
 
-4，Activity各种情况下的生命周期
+与Activity类似，Service也有自己的生命周期函数，在不同的时刻，系统会调用对应的Service生命周期函数，不过与Activity声明周期相比，Service的声明周期更加简单，我们通过官方给出的一张图片来体会一下：
 
-5，横竖屏切换的时候，Activity各种情况下的生命周期
+这里我们总结一下：
 
-6，Activity与Fragment之间生命周期比较
+1). 被启动的服务的生命周期：如果一个Service被某个Activity 调用 Context.startService 方法启动，那么不管是否有Activity使用bindService绑定或unbindService解除绑定到该Service，该Service都在后台运行。如果一个Service被startService 方法多次启动，那么onCreate方法只会调用一次，onStart将会被调用多次（对应调用startService的次数），并且系统只会创建Service的一个实例（因此你应该知道只需要一次stopService调用）。该Service将会一直在后台运行，而不管对应程序的Activity是否在运行，直到被调用stopService，或自身的stopSelf方法。当然如果系统资源不足，android系统也可能结束服务。
 
-7，Activity上有Dialog的时候按Home键时的生命周期
+2). 被绑定的服务的生命周期：如果一个Service被某个Activity 调用 Context.bindService 方法绑定启动，不管调用 bindService 调用几次，onCreate方法都只会调用一次，同时onStart方法始终不会被调用。当连接建立之后，Service将会一直运行，除非调用Context.unbindService 断开连接或者之前调用bindService 的 Context 不存在了（如Activity被finish的时候），系统将会自动停止Service，对应onDestroy将被调用。
 
-8，两个Activity之间跳转时必然会执行的是哪几个方法？
+3). 被启动又被绑定的服务的生命周期：如果一个Service又被启动又被绑定，则该Service将会一直在后台运行。并且不管如何调用，onCreate始终只会调用一次，对应startService调用多少次，Service的onStart便会调用多少次。调用unbindService将不会停止Service，而必须调用 stopService 或 Service的 stopSelf 来停止服务。
 
-9，前台切换到后台，然后再回到前台，activity生命周期回调方法。弹出Dialog,生命周期回调方法。
+4). 当服务被停止时清除服务：当一个Service被终止（1、调用stopService；2、调用stopSelf；3、不再有绑定的连接（没有被启动））时，onDestroy方法将会被调用，在这里你应当做一些清除工作，如停止在Service中创建并运行的线程。
 
-10，activity的四种启动模式对比
+特别注意：
 
-11，activity状态保存与恢复
+1、你应当知道在调用 bindService 绑定到Service的时候，你就应当保证在某处调用 unbindService 解除绑定（尽管 Activity 被 finish 的时候绑定会自　　　　　　动解除，并且Service会自动停止）；
 
-12，Fragment各种情况下的生命周期
+2、你应当注意 使用 startService 启动服务之后，一定要使用 stopService停止服务，不管你是否使用bindService；
 
-13，Fragment状态保存startActivityForResult是哪个类的方法，在什么情况下使用？
+3、同时使用 startService 与 bindService 要注意到，Service 的终止，需要unbindService与stopService同时调用，才能终止 Service，不管 startService 与 bindService 的调用顺序，如果先调用 unbindService 此时服务不会自动终止，再调用 stopService 之后服务才会停止，如果先调用 stopService 此时服务也不会终止，而再调用 unbindService 或者 之前调用 bindService 的 Context 不存在了（如Activity 被 finish 的时候）之后服务才会自动停止；
 
-14，如何实现Fragment的滑动？
+4、当在旋转手机屏幕的时候，当手机屏幕在“横”“竖”变换时，此时如果你的 Activity 如果会自动旋转的话，旋转其实是 Activity 的重新创建，因此旋转之前的使用 bindService 建立的连接便会断开（Context 不存在了），对应服务的生命周期与上述相同。
 
-15，Fragment之间传递数据的方式？
+5、在 sdk 2.0 及其以后的版本中，对应的 onStart 已经被否决变为了 onStartCommand，不过之前的 onStart 任然有效。这意味着，如果你开发的应用程序用的 sdk 为 2.0 及其以后的版本，那么你应当使用 onStartCommand 而不是 onStart。
+生命周期方法说明
 
-16，Activity怎么和Service绑定？
+onStartCommand()
+当另一个组件（如 Activity）通过调用 startService() 请求启动服务时，系统将调用此方法。一旦执行此方法，服务即会启动并可在后台无限期运行。 如果您实现此方法，则在服务工作完成后，需要由您通过调用 stopSelf() 或 stopService() 来停止服务。（如果您只想提供绑定，则无需实现此方法。）
 
-17，怎么在Activity中启动自己对应的Service？
+onBind()
+当另一个组件想通过调用 bindService() 与服务绑定（例如执行 RPC）时，系统将调用此方法。在此方法的实现中，您必须通过返回 IBinder 提供一个接口，供客户端用来与服务进行通信。请务必实现此方法，但如果您并不希望允许绑定，则应返回 null。
 
-18，service和activity怎么进行数据交互？
+onCreate()
+首次创建服务时，系统将调用此方法来执行一次性设置程序（在调用 onStartCommand() 或 onBind() 之前）。如果服务已在运行，则不会调用此方法。
 
-19，service的开启方式
-
-20，请描述一下service的生命周期
-
-21，谈谈你对ContentProvider的理解
-
-22，说说ContentProvider、ContentResolver、ContentObserver之间的关系
-
-23，请描述一下广播BroadcastReceiver的理解
-
-24，广播的分类
-
-25，广播使用的方式和场景
-
-26，在manifest和代码中如何注册和使用BroadcastReceiver?
-
-27，本地广播和全局广播有什么差别？
-
-28，BroadcastReceiver,LocalBroadcastReceiver区别
-
-29，AlertDialog,popupWindow,Activity区别
-
-30，Application和Activity的Context对象的区别
-
-31，Android属性动画特性
-
-32，如何导入外部数据库？
-
-33，LinearLayout、RelativeLayout、FrameLayout的特性及对比，并介绍使用场景
-
-34，谈谈对接口与回调的理解
-
-35，回调的原理
-
-36，写一个回调demo
-
-37，介绍下SurfView
-
-38，RecycleView的使用
-
-39，序列化的作用，以及Android两种序列化的区别
-
-40，差值器
-
-41，估值器
-
-42，Android中数据存储方式
+onDestroy()
+当服务不再使用且将被销毁时，系统将调用此方法。服务应该实现此方法来清理所有资源，如线程、注册的侦听器、接收器等。 这是服务接收的最后一个调用。

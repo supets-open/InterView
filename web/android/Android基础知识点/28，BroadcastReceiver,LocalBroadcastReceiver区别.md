@@ -1,83 +1,489 @@
-1，四大组件
+[LocalBroadcastManager 的实现原理，还是 Binder？](http://www.trinea.cn/android/localbroadcastmanager-impl/)
 
-2，四大组件的生命周期和简单用法
 
-3，Activity之间的通信方式
 
-4，Activity各种情况下的生命周期
+对 LocalBroadcastManager 大家应该都不陌生，相对 BroadcastReceiver，它只能用于应用内通信，安全性更好，同时拥有更高的运行效率。也是需要发送应用内广播时的官方推荐。
 
-5，横竖屏切换的时候，Activity各种情况下的生命周期
+  
 
-6，Activity与Fragment之间生命周期比较
+大家也都知道BroadcastReceiver的通信是走 Binder 机制的，而 LocalBroadcastManager 因为叫LocalBroadcast，可能让人产生一种它也是以 Binder 通讯方式为底层实现的错觉，点进源码，我们会发现这个更安全高效的实现原来如此熟悉。
 
-7，Activity上有Dialog的时候按Home键时的生命周期
+ 
 
-8，两个Activity之间跳转时必然会执行的是哪几个方法？
+还是先简单提下 LocalBroadcastManager 使用，更多可见：BroadcastReceiver 详细介绍。
 
-9，前台切换到后台，然后再回到前台，activity生命周期回调方法。弹出Dialog,生命周期回调方法。
+  
 
-10，activity的四种启动模式对比
+1. LocalBroadcastManager 使用
 
-11，activity状态保存与恢复
+LocalBroadcastManager 的使用跟一般 BroadcastReceiver 差别不大。
 
-12，Fragment各种情况下的生命周期
+(1) 自定义 BroadcastReceiver 子类
 
-13，Fragment状态保存startActivityForResult是哪个类的方法，在什么情况下使用？
+ 
 
-14，如何实现Fragment的滑动？
 
-15，Fragment之间传递数据的方式？
+Java
 
-16，Activity怎么和Service绑定？
+public class LocalBroadcastReceiver extends BroadcastReceiver {
 
-17，怎么在Activity中启动自己对应的Service？
+    @Override
+    public void onReceive(Context context, Intent intent) {
+        localMsg.setText(intent.getStringExtra(MSG_KEY));
+    }
+}
 
-18，service和activity怎么进行数据交互？
+ public class LocalBroadcastReceiver extends BroadcastReceiver {
+ 
+    @Override
+    public void onReceive(Context context, Intent intent) {
+        localMsg.setText(intent.getStringExtra(MSG_KEY));
+    }
+}
 
-19，service的开启方式
+  
 
-20，请描述一下service的生命周期
+(2) 注册接收器
 
-21，谈谈你对ContentProvider的理解
+ 
 
-22，说说ContentProvider、ContentResolver、ContentObserver之间的关系
 
-23，请描述一下广播BroadcastReceiver的理解
+Java
 
-24，广播的分类
+LocalBroadcastReceiver localReceiver = new LocalBroadcastReceiver();
+LocalBroadcastManager.getInstance(context).registerReceiver(localReceiver, new IntentFilter(ACTION_LOCAL_SEND));
 
-25，广播使用的方式和场景
 
-26，在manifest和代码中如何注册和使用BroadcastReceiver?
+ LocalBroadcastReceiver localReceiver = new LocalBroadcastReceiver();
+LocalBroadcastManager.getInstance(context).registerReceiver(localReceiver, new IntentFilter(ACTION_LOCAL_SEND));
 
-27，本地广播和全局广播有什么差别？
+ 
+ 
 
-28，BroadcastReceiver,LocalBroadcastReceiver区别
+  
 
-29，AlertDialog,popupWindow,Activity区别
+(3) 发送广播
 
-30，Application和Activity的Context对象的区别
+ 
 
-31，Android属性动画特性
+ 
 
-32，如何导入外部数据库？
 
-33，LinearLayout、RelativeLayout、FrameLayout的特性及对比，并介绍使用场景
 
-34，谈谈对接口与回调的理解
+Java
 
-35，回调的原理
+LocalBroadcastManager.getInstance(context).sendBroadcast(new Intent(ACTION_LOCAL_SEND));
 
-36，写一个回调demo
+ LocalBroadcastManager.getInstance(context).sendBroadcast(new Intent(ACTION_LOCAL_SEND));
 
-37，介绍下SurfView
+  
 
-38，RecycleView的使用
+(4) 取消注册
 
-39，序列化的作用，以及Android两种序列化的区别
 
-40，差值器
+Java
 
-41，估值器
+LocalBroadcastManager.getInstance(context).unregisterReceiver(localReceiver);
 
-42，Android中数据存储方式
+
+
+
+
+1
+ LocalBroadcastManager.getInstance(context).unregisterReceiver(localReceiver);
+
+
+2. 实现
+
+LocalBroadcastManager 源代码可见：LocalBroadcastManager.java
+
+(1) 构造函数
+
+
+Java
+
+public static LocalBroadcastManager getInstance(Context context) {
+    synchronized (mLock) {
+        if (mInstance == null) {
+            mInstance = new LocalBroadcastManager(context.getApplicationContext());
+        }
+        return mInstance;
+    }
+}
+
+private LocalBroadcastManager(Context context) {
+    mAppContext = context;
+    mHandler = new Handler(context.getMainLooper()) {
+
+        @Override
+        public void handleMessage(Message msg) {
+            switch (msg.what) {
+                case MSG_EXEC_PENDING_BROADCASTS:
+                    executePendingBroadcasts();
+                    break;
+                default:
+                    super.handleMessage(msg);
+            }
+        }
+    };
+}
+
+ public static LocalBroadcastManager getInstance(Context context) {
+    synchronized (mLock) {
+        if (mInstance == null) {
+            mInstance = new LocalBroadcastManager(context.getApplicationContext());
+        }
+        return mInstance;
+    }
+}
+ 
+private LocalBroadcastManager(Context context) {
+    mAppContext = context;
+    mHandler = new Handler(context.getMainLooper()) {
+ 
+        @Override
+        public void handleMessage(Message msg) {
+            switch (msg.what) {
+                case MSG_EXEC_PENDING_BROADCASTS:
+                    executePendingBroadcasts();
+                    break;
+                default:
+                    super.handleMessage(msg);
+            }
+        }
+    };
+}
+
+ 
+ 
+
+先看构造函数，单例实现因而私有化构造函数。
+ 注意的是基于主线程的 Looper 新建了一个 Handler，handleMessage中会调用接收器对广播的消息进行处理，也是 LocalBroadcastManager 的核心部分，具体见后面executePendingBroadcasts()介绍。
+
+  
+
+单例函数还可以通过双层条件判断提高效率，双层条件判断的写法可见：单例模式
+
+ 
+
+(2) 注册接收器
+
+Java
+
+HashMap<BroadcastReceiver, ArrayList<IntentFilter>> mReceivers
+            = new HashMap<BroadcastReceiver, ArrayList<IntentFilter>>();
+HashMap<String, ArrayList<ReceiverRecord>> mActions
+            = new HashMap<String, ArrayList<ReceiverRecord>>();
+
+public void registerReceiver(BroadcastReceiver receiver, IntentFilter filter) {
+    synchronized (mReceivers) {
+        ReceiverRecord entry = new ReceiverRecord(filter, receiver);
+        ArrayList<IntentFilter> filters = mReceivers.get(receiver);
+        if (filters == null) {
+            filters = new ArrayList<IntentFilter>(1);
+            mReceivers.put(receiver, filters);
+        }
+        filters.add(filter);
+        for (int i=0; i<filter.countActions(); i++) {
+            String action = filter.getAction(i);
+            ArrayList<ReceiverRecord> entries = mActions.get(action);
+            if (entries == null) {
+                entries = new ArrayList<ReceiverRecord>(1);
+                mActions.put(action, entries);
+            }
+            entries.add(entry);
+        }
+    }
+}  
+
+
+ HashMap<BroadcastReceiver, ArrayList<IntentFilter>> mReceivers
+            = new HashMap<BroadcastReceiver, ArrayList<IntentFilter>>();
+HashMap<String, ArrayList<ReceiverRecord>> mActions
+            = new HashMap<String, ArrayList<ReceiverRecord>>();
+ 
+public void registerReceiver(BroadcastReceiver receiver, IntentFilter filter) {
+    synchronized (mReceivers) {
+        ReceiverRecord entry = new ReceiverRecord(filter, receiver);
+        ArrayList<IntentFilter> filters = mReceivers.get(receiver);
+        if (filters == null) {
+            filters = new ArrayList<IntentFilter>(1);
+            mReceivers.put(receiver, filters);
+        }
+        filters.add(filter);
+        for (int i=0; i<filter.countActions(); i++) {
+            String action = filter.getAction(i);
+            ArrayList<ReceiverRecord> entries = mActions.get(action);
+            if (entries == null) {
+                entries = new ArrayList<ReceiverRecord>(1);
+                mActions.put(action, entries);
+            }
+            entries.add(entry);
+        }
+    }
+}  
+
+ 
+ 
+
+mReceivers 存储广播和过滤器信息，以BroadcastReceiver作为 key，IntentFilter链表作为 value。
+mReceivers 是接收器和IntentFilter的对应表，主要作用是方便在unregisterReceiver(…)取消注册，同时作为对象锁限制注册接收器、发送广播、取消接收器注册等几个过程的并发访问。
+
+ 
+
+mActions 以Action为 key，注册这个Action的BroadcastReceiver链表为 value。mActions 的主要作用是方便在广播发送后快速得到可以接收它的BroadcastReceiver。
+
+ 
+
+(3) 发送广播
+
+
+
+Java
+
+public boolean sendBroadcast(Intent intent) {
+    synchronized (mReceivers) {
+        final String action = intent.getAction();
+        final String type = intent.resolveTypeIfNeeded(mAppContext.getContentResolver());
+        final Uri data = intent.getData();
+        final String scheme = intent.getScheme();
+        final Set<String> categories = intent.getCategories();
+        ……
+        ArrayList<ReceiverRecord> entries = mActions.get(intent.getAction());
+        if (entries != null) {
+            if (debug) Log.v(TAG, "Action list: " + entries);
+
+            ArrayList<ReceiverRecord> receivers = null;
+            for (int i=0; i<entries.size(); i++) {
+                ReceiverRecord receiver = entries.get(i);
+                if (receiver.broadcasting) {
+                    if (debug) {
+                        Log.v(TAG, "  Filter's target already added");
+                    }
+                    continue;
+                }
+
+                int match = receiver.filter.match(action, type, scheme, data,
+                        categories, "LocalBroadcastManager");
+                if (match >= 0) {
+                    if (debug) Log.v(TAG, "  Filter matched!  match=0x" +
+                            Integer.toHexString(match));
+                    if (receivers == null) {
+                        receivers = new ArrayList<ReceiverRecord>();
+                    }
+                    receivers.add(receiver);
+                    receiver.broadcasting = true;
+                } else {
+                    ……
+                }
+            }
+
+            if (receivers != null) {
+                for (int i=0; i<receivers.size(); i++) {
+                    receivers.get(i).broadcasting = false;
+                }
+                mPendingBroadcasts.add(new BroadcastRecord(intent, receivers));
+                if (!mHandler.hasMessages(MSG_EXEC_PENDING_BROADCASTS)) {
+                    mHandler.sendEmptyMessage(MSG_EXEC_PENDING_BROADCASTS);
+                }
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+
+ public boolean sendBroadcast(Intent intent) {
+    synchronized (mReceivers) {
+        final String action = intent.getAction();
+        final String type = intent.resolveTypeIfNeeded(mAppContext.getContentResolver());
+        final Uri data = intent.getData();
+        final String scheme = intent.getScheme();
+        final Set<String> categories = intent.getCategories();
+        ……
+        ArrayList<ReceiverRecord> entries = mActions.get(intent.getAction());
+        if (entries != null) {
+            if (debug) Log.v(TAG, "Action list: " + entries);
+ 
+            ArrayList<ReceiverRecord> receivers = null;
+            for (int i=0; i<entries.size(); i++) {
+                ReceiverRecord receiver = entries.get(i);
+                if (receiver.broadcasting) {
+                    if (debug) {
+                        Log.v(TAG, "  Filter's target already added");
+                    }
+                    continue;
+                }
+ 
+                int match = receiver.filter.match(action, type, scheme, data,
+                        categories, "LocalBroadcastManager");
+                if (match >= 0) {
+                    if (debug) Log.v(TAG, "  Filter matched!  match=0x" +
+                            Integer.toHexString(match));
+                    if (receivers == null) {
+                        receivers = new ArrayList<ReceiverRecord>();
+                    }
+                    receivers.add(receiver);
+                    receiver.broadcasting = true;
+                } else {
+                    ……
+                }
+            }
+ 
+            if (receivers != null) {
+                for (int i=0; i<receivers.size(); i++) {
+                    receivers.get(i).broadcasting = false;
+                }
+                mPendingBroadcasts.add(new BroadcastRecord(intent, receivers));
+                if (!mHandler.hasMessages(MSG_EXEC_PENDING_BROADCASTS)) {
+                    mHandler.sendEmptyMessage(MSG_EXEC_PENDING_BROADCASTS);
+                }
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+ 
+ 
+
+先根据Action从mActions中取出ReceiverRecord列表，循环每个ReceiverRecord判断 filter 和 intent 中的 action、type、scheme、data、categoried 是否 match，是的话则保存到receivers列表中，发送 what 为MSG_EXEC_PENDING_BROADCASTS的消息，通过 Handler 去处理。
+
+  
+
+关于 match 规则可见：Intent Filter介绍。
+
+ 
+
+(4) 消息处理
+
+
+Java
+
+private void executePendingBroadcasts() {
+    while (true) {
+        BroadcastRecord[] brs = null;
+        synchronized (mReceivers) {
+            final int N = mPendingBroadcasts.size();
+            if (N <= 0) {
+                return;
+            }
+            brs = new BroadcastRecord[N];
+            mPendingBroadcasts.toArray(brs);
+            mPendingBroadcasts.clear();
+        }
+        for (int i=0; i<brs.length; i++) {
+            BroadcastRecord br = brs[i];
+            for (int j=0; j<br.receivers.size(); j++) {
+                br.receivers.get(j).receiver.onReceive(mAppContext, br.intent);
+            }
+        }
+    }
+}
+
+ private void executePendingBroadcasts() {
+    while (true) {
+        BroadcastRecord[] brs = null;
+        synchronized (mReceivers) {
+            final int N = mPendingBroadcasts.size();
+            if (N <= 0) {
+                return;
+            }
+            brs = new BroadcastRecord[N];
+            mPendingBroadcasts.toArray(brs);
+            mPendingBroadcasts.clear();
+        }
+        for (int i=0; i<brs.length; i++) {
+            BroadcastRecord br = brs[i];
+            for (int j=0; j<br.receivers.size(); j++) {
+                br.receivers.get(j).receiver.onReceive(mAppContext, br.intent);
+            }
+        }
+    }
+}
+
+ 
+ 
+
+以上为消息处理的函数。mPendingBroadcasts转换为数组BroadcastRecord，循环每个receiver，调用其onReceive函数，这样便完成了广播的核心逻辑。
+
+ 
+
+(5) 取消注册
+
+ 
+
+ 
+
+
+
+Java
+
+public void unregisterReceiver(BroadcastReceiver receiver) {
+    synchronized (mReceivers) {
+        ArrayList<IntentFilter> filters = mReceivers.remove(receiver);
+        if (filters == null) {
+            return;
+        }
+        for (int i=0; i<filters.size(); i++) {
+            IntentFilter filter = filters.get(i);
+            for (int j=0; j<filter.countActions(); j++) {
+                String action = filter.getAction(j);
+                ArrayList<ReceiverRecord> receivers = mActions.get(action);
+                if (receivers != null) {
+                    for (int k=0; k<receivers.size(); k++) {
+                        if (receivers.get(k).receiver == receiver) {
+                            receivers.remove(k);
+                            k--;
+                        }
+                    }
+                    if (receivers.size() <= 0) {
+                        mActions.remove(action);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+ public void unregisterReceiver(BroadcastReceiver receiver) {
+    synchronized (mReceivers) {
+        ArrayList<IntentFilter> filters = mReceivers.remove(receiver);
+        if (filters == null) {
+            return;
+        }
+        for (int i=0; i<filters.size(); i++) {
+            IntentFilter filter = filters.get(i);
+            for (int j=0; j<filter.countActions(); j++) {
+                String action = filter.getAction(j);
+                ArrayList<ReceiverRecord> receivers = mActions.get(action);
+                if (receivers != null) {
+                    for (int k=0; k<receivers.size(); k++) {
+                        if (receivers.get(k).receiver == receiver) {
+                            receivers.remove(k);
+                            k--;
+                        }
+                    }
+                    if (receivers.size() <= 0) {
+                        mActions.remove(action);
+                    }
+                }
+            }
+        }
+    }
+}
+
+ 
+ 
+
+从mReceivers及mActions中移除相应元素。
+
+ 
+
+到此为止我们便非常清晰了：
+(1) LocalBroadcastManager 的核心实现实际还是 Handler，只是利用到了 IntentFilter 的 match 功能，至于 BroadcastReceiver 换成其他接口也无所谓，顺便利用了现成的类和概念而已。
+(2) 因为是 Handler 实现的应用内的通信，自然安全性更好，效率更高。

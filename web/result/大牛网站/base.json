@@ -3,6 +3,15 @@
     {
       "name": "极客学院",
       "path": "/result/大牛网站/极客学院.md"
+    },{
+      "name": "CSDN博客-何家成",
+      "path": "https://blog.csdn.net/carson_ho?viewmode=contents"
+    },{
+      "name": "CSDN博客-张鸿洋",
+      "path": "https://blog.csdn.net/lmj623565791?viewmode=contents"
+    },{
+      "name": "CSDN博客-郭霖",
+      "path": "https://blog.csdn.net/guolin_blog/"
     }
   ]
 }
