@@ -1,83 +1,24 @@
-1，四大组件
+1 startActivity
 
-2，四大组件的生命周期和简单用法
+2 startActivityForResult
+重写onActivityResult,来获取从BActivity返回的数据
 
-3，Activity之间的通信方式
+在B Activity finish()之前，将传回数据时，使用setResult方法，setResult方法要在finish()之前调用，才能将数据返回。
 
-4，Activity各种情况下的生命周期
+按BACK键从一个Activity退出来的，一按BACK，android就会自动调用Activity的finish()方法，然后设置resultCode为RESULT_CANCELED，同时设置intent为NULL并没有调用setResult()也就不会返回任何数据了.解决方法就是在Activity里面捕获按BACK的事件，捕获到之后先setResult，然后自己来调用finish().
 
-5，横竖屏切换的时候，Activity各种情况下的生命周期
 
-6，Activity与Fragment之间生命周期比较
+延伸：
+Activity与Fragment之间的通信
 
-7，Activity上有Dialog的时候按Home键时的生命周期
+1 如果Activity中有Fragment实例，可以通过直接调用Fragment中的public方法
 
-8，两个Activity之间跳转时必然会执行的是哪几个方法？
+2 如果Activity中没有Fragment实例，每个Fragment都有唯一的TAG或者ID,可以通过getFragmentManager.findFragmentByTag()或者findFragmentById()获得任何Fragment实例。
 
-9，前台切换到后台，然后再回到前台，activity生命周期回调方法。弹出Dialog,生命周期回调方法。
+3 在Fragment中获取Actvity实例，然后进行操作。
 
-10，activity的四种启动模式对比
+4 如果Activity向Fragment传递参数，在Activity通过setArguments传递，在Fragment通过getArguments获取。官方文档推荐，在每个Frament里必须有一个空的构造函数，以便其可以实例化，但是不推荐含有带参的构造方法，用来传递参数，因为这些构造函数，并不能在调用Fragment时，将Fragment重新实例化，如果需要传递参数，可以通过setArguments传递，在Fragment通过getArguments。
 
-11，activity状态保存与恢复
+5 通过广播通信。在Activity中注册广播并在onReive中对相应广播处理，在Fragment中发送广播。
 
-12，Fragment各种情况下的生命周期
-
-13，Fragment状态保存startActivityForResult是哪个类的方法，在什么情况下使用？
-
-14，如何实现Fragment的滑动？
-
-15，Fragment之间传递数据的方式？
-
-16，Activity怎么和Service绑定？
-
-17，怎么在Activity中启动自己对应的Service？
-
-18，service和activity怎么进行数据交互？
-
-19，service的开启方式
-
-20，请描述一下service的生命周期
-
-21，谈谈你对ContentProvider的理解
-
-22，说说ContentProvider、ContentResolver、ContentObserver之间的关系
-
-23，请描述一下广播BroadcastReceiver的理解
-
-24，广播的分类
-
-25，广播使用的方式和场景
-
-26，在manifest和代码中如何注册和使用BroadcastReceiver?
-
-27，本地广播和全局广播有什么差别？
-
-28，BroadcastReceiver,LocalBroadcastReceiver区别
-
-29，AlertDialog,popupWindow,Activity区别
-
-30，Application和Activity的Context对象的区别
-
-31，Android属性动画特性
-
-32，如何导入外部数据库？
-
-33，LinearLayout、RelativeLayout、FrameLayout的特性及对比，并介绍使用场景
-
-34，谈谈对接口与回调的理解
-
-35，回调的原理
-
-36，写一个回调demo
-
-37，介绍下SurfView
-
-38，RecycleView的使用
-
-39，序列化的作用，以及Android两种序列化的区别
-
-40，差值器
-
-41，估值器
-
-42，Android中数据存储方式
+6 通过回调听信。在Activity中实现接口，在Fragment中定义和回调接口。
