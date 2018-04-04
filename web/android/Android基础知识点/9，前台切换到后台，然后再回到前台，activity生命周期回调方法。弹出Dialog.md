@@ -1,83 +1,107 @@
-1，四大组件
+## 弹出Dialog，生命值周期回调方法
 
-2，四大组件的生命周期和简单用法
+弹出对话框dialog不会回调onPause，主题对话框的Activity会回调onPause
 
-3，Activity之间的通信方式
 
-4，Activity各种情况下的生命周期
+## Android应用前后台切换的判断：
 
-5，横竖屏切换的时候，Activity各种情况下的生命周期
+1 实现一个BaseActivity，然后让其他所有Activity都继承自它，然后在生命周期函数中做相应的检测。具体检测方法如下：在Activity的onStart和onStop方法中进行计数，计数变量为count，在onStart中将变量加1，onStop中减1。
 
-6，Activity与Fragment之间生命周期比较
 
-7，Activity上有Dialog的时候按Home键时的生命周期
+2 Android在API 14之后，在Application类中，提供了一个应用生命周期回调的注册方法，用来对应用的生命周期进行集中管理，这个接口叫registerActivityLifecycleCallbacks，可以通过它注册自己的ActivityLifeCycleCallback，每一个Activity的生命周期都会回调到这里的对应方法。其实这个注册方法的本质和我们实现BaseActivity是一样的，只是将生命周期的管理移到了Activity本身的实现中。
 
-8，两个Activity之间跳转时必然会执行的是哪几个方法？
 
-9，前台切换到后台，然后再回到前台，activity生命周期回调方法。弹出Dialog,生命周期回调方法。
+	public class MyApplication extends Application{  
+	    public int count = 0;  
+	    @Override  
+	    public void onCreate() {  
+	        super.onCreate();  
+	  
+	        registerActivityLifecycleCallbacks(new ActivityLifecycleCallbacks() {  
+	  
+	            @Override  
+	            public void onActivityStopped(Activity activity) {  
+	                Log.v("viclee", activity + "onActivityStopped");  
+	                count--;  
+	                if (count == 0) {  
+	                    Log.v("viclee", ">>>>>>>>>>>>>>>>>>>切到后台  lifecycle");  
+	                }  
+	            }  
+	  
+	            @Override  
+	            public void onActivityStarted(Activity activity) {  
+	                Log.v("viclee", activity + "onActivityStarted");  
+	                if (count == 0) {  
+	                    Log.v("viclee", ">>>>>>>>>>>>>>>>>>>切到前台  lifecycle");  
+	                }  
+	                count++;  
+	            }  
+	  
+	            @Override  
+	            public void onActivitySaveInstanceState(Activity activity, Bundle outState) {  
+	                Log.v("viclee", activity + "onActivitySaveInstanceState");  
+	            }  
+	  
+	            @Override  
+	            public void onActivityResumed(Activity activity) {  
+	                Log.v("viclee", activity + "onActivityResumed");  
+	            }  
+	  
+	            @Override  
+	            public void onActivityPaused(Activity activity) {  
+	                Log.v("viclee", activity + "onActivityPaused");  
+	            }  
+	  
+	            @Override  
+	            public void onActivityDestroyed(Activity activity) {  
+	                Log.v("viclee", activity + "onActivityDestroyed");  
+	            }  
+	  
+	            @Override  
+	            public void onActivityCreated(Activity activity, Bundle savedInstanceState) {  
+	                Log.v("viclee", activity + "onActivityCreated");  
+	            }  
+	        });  
+	    }  
+	}  
 
-10，activity的四种启动模式对比
+3 当应用切到后台的时候，运行在前台的进程由我们的app变成了桌面app，依据这一点，我们可以实现检测应用前后台切换的功能。在Activity的onStop生命周期中执行检测代码，如果发现当前运行在前台的进程不是我们自己的进程，说明应用切到了后台。
 
-11，activity状态保存与恢复
 
-12，Fragment各种情况下的生命周期
+      想想为什么要在onStop中检测，而不是onPause？这是由于A启动B时，生命周期的执行顺序如下：A.onPause->B.onCreate->B.onStart->B.onResume->A.onStop，也就是说，在A的onPause方法中，B的生命周期还没有执行，进程没有进入前台，当然是检测不到的。我们把代码移到onPause生命周期中，发现确实没有效果。
 
-13，Fragment状态保存startActivityForResult是哪个类的方法，在什么情况下使用？
-
-14，如何实现Fragment的滑动？
-
-15，Fragment之间传递数据的方式？
-
-16，Activity怎么和Service绑定？
-
-17，怎么在Activity中启动自己对应的Service？
-
-18，service和activity怎么进行数据交互？
-
-19，service的开启方式
-
-20，请描述一下service的生命周期
-
-21，谈谈你对ContentProvider的理解
-
-22，说说ContentProvider、ContentResolver、ContentObserver之间的关系
-
-23，请描述一下广播BroadcastReceiver的理解
-
-24，广播的分类
-
-25，广播使用的方式和场景
-
-26，在manifest和代码中如何注册和使用BroadcastReceiver?
-
-27，本地广播和全局广播有什么差别？
-
-28，BroadcastReceiver,LocalBroadcastReceiver区别
-
-29，AlertDialog,popupWindow,Activity区别
-
-30，Application和Activity的Context对象的区别
-
-31，Android属性动画特性
-
-32，如何导入外部数据库？
-
-33，LinearLayout、RelativeLayout、FrameLayout的特性及对比，并介绍使用场景
-
-34，谈谈对接口与回调的理解
-
-35，回调的原理
-
-36，写一个回调demo
-
-37，介绍下SurfView
-
-38，RecycleView的使用
-
-39，序列化的作用，以及Android两种序列化的区别
-
-40，差值器
-
-41，估值器
-
-42，Android中数据存储方式
+       具体实现代码如下：
+	  //用来控制应用前后台切换的逻辑  
+	  private boolean isCurrentRunningForeground = true;  
+	  @Override  
+	  protected void onStart() {  
+	      super.onStart();  
+	      if (!isCurrentRunningForeground) {  
+	          Log.d(TAG, ">>>>>>>>>>>>>>>>>>>切到前台 activity process");  
+	      }  
+	  }  
+	  
+	  @Override  
+	  protected void onStop() {  
+	      super.onStop();  
+	      isCurrentRunningForeground = isRunningForeground();  
+	      if (!isCurrentRunningForeground) {  
+	          Log.d(TAG,">>>>>>>>>>>>>>>>>>>切到后台 activity process");  
+	      }  
+	  }  
+	  
+	  public boolean isRunningForeground() {  
+	      ActivityManager activityManager = (ActivityManager) this.getSystemService(Context.ACTIVITY_SERVICE);  
+	      List<ActivityManager.RunningAppProcessInfo> appProcessInfos = activityManager.getRunningAppProcesses();  
+	      // 枚举进程  
+	      for (ActivityManager.RunningAppProcessInfo appProcessInfo : appProcessInfos) {  
+	          if (appProcessInfo.importance == ActivityManager.RunningAppProcessInfo.IMPORTANCE_FOREGROUND) {  
+	              if (appProcessInfo.processName.equals(this.getApplicationInfo().processName)) {  
+	                  Log.d(TAG,"EntryActivity isRunningForeGround");  
+	                  return true;  
+	              }  
+	          }  
+	      }  
+	      Log.d(TAG, "EntryActivity isRunningBackGround");  
+	      return false;  
+	  }  

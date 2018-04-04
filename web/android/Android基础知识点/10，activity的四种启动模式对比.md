@@ -1,83 +1,40 @@
-1，四大组件
+[Android之Activity系列总结(三)--Activity的四种启动模式 ](https://www.cnblogs.com/jycboy/p/6367829.html)
 
-2，四大组件的生命周期和简单用法
+[Android之Activity系列总结(二)--任务和返回栈 ](http://www.cnblogs.com/jycboy/p/6367330.html)
 
-3，Activity之间的通信方式
+[Android之Activity系列总结（一）--Activity概览 ](http://www.cnblogs.com/jycboy/p/6367282.html)
 
-4，Activity各种情况下的生命周期
 
-5，横竖屏切换的时候，Activity各种情况下的生命周期
 
-6，Activity与Fragment之间生命周期比较
+简介
 
-7，Activity上有Dialog的时候按Home键时的生命周期
+通过设置ActivityManifestActivity_launchMode可以设置Activity的启动模式。
 
-8，两个Activity之间跳转时必然会执行的是哪几个方法？
+默认情况下，使用启动模式：standard。
 
-9，前台切换到后台，然后再回到前台，activity生命周期回调方法。弹出Dialog,生命周期回调方法。
+同时，launchMode可以通过Intent flags的改变在运行时被复写，比
+ 如 Intent flags FLAG_ACTIVITY_SINGLE_TOP, FLAG_ACTIVITY_NEW_TASK,
+FLAG_ACTIVITY_MULTIPLE_TASK.
 
-10，activity的四种启动模式对比
 
-11，activity状态保存与恢复
+四种模式
 
-12，Fragment各种情况下的生命周期
+standard
 
-13，Fragment状态保存startActivityForResult是哪个类的方法，在什么情况下使用？
+默认模式，会在启动时创建一个新实例，创建的模式也可以随Intent.FLAG_ACTIVITY_NEW_TASK而改变
+ 
+singleTop
+ 
+当启动activity时，有相同的activity在前台与用户交互，那就复用这个activity，这个实例会被调用Activity.onNewIntent()。
 
-14，如何实现Fragment的滑动？
+singleTask
 
-15，Fragment之间传递数据的方式？
+在启动activity时，若有一个运行着这个activity的task，那这个activity实例会被调到前台，并调用Activity.onNewIntent() ，启动实例的Intent的flag会被设置Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT . singleTask是singleTop的一个扩展集。This is a superset of the singleTop mode, where if there is already an instance of the activity being started at the top of the stack, it will receive the Intent as described there (without the FLAG_ACTIVITY_BROUGHT_TO_FRONT flag set). See the Tasks and Back Stack document for more details about tasks.
+ 
 
-16，Activity怎么和Service绑定？
+singleInstance
 
-17，怎么在Activity中启动自己对应的Service？
+ 
+开辟一个只允许一个activity实例在里头运行的task. 如果用同样的intent再次启动这个activity，task会被调到前台，其Activity.onNewIntent() 会被调用. 如果这个activity实例要启动一个新activity，那么这个新activity会在一个新task中运行.
+ 
 
-18，service和activity怎么进行数据交互？
-
-19，service的开启方式
-
-20，请描述一下service的生命周期
-
-21，谈谈你对ContentProvider的理解
-
-22，说说ContentProvider、ContentResolver、ContentObserver之间的关系
-
-23，请描述一下广播BroadcastReceiver的理解
-
-24，广播的分类
-
-25，广播使用的方式和场景
-
-26，在manifest和代码中如何注册和使用BroadcastReceiver?
-
-27，本地广播和全局广播有什么差别？
-
-28，BroadcastReceiver,LocalBroadcastReceiver区别
-
-29，AlertDialog,popupWindow,Activity区别
-
-30，Application和Activity的Context对象的区别
-
-31，Android属性动画特性
-
-32，如何导入外部数据库？
-
-33，LinearLayout、RelativeLayout、FrameLayout的特性及对比，并介绍使用场景
-
-34，谈谈对接口与回调的理解
-
-35，回调的原理
-
-36，写一个回调demo
-
-37，介绍下SurfView
-
-38，RecycleView的使用
-
-39，序列化的作用，以及Android两种序列化的区别
-
-40，差值器
-
-41，估值器
-
-42，Android中数据存储方式
