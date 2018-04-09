@@ -79,6 +79,18 @@
 	{
       "name": "Android内存优化",
       "path": "/android/性能优化/Android内存优化.md"
+    },
+	{
+      "name": "ViewStub、include、merge使用与源码分析",
+      "path": "/android/性能优化/ViewStub、include、merge使用与源码分析.md"
+    },
+	{
+      "name": "听FackBook工程师讲Custom ViewGroups",
+      "path": "/android/性能优化/听FackBook工程师讲Custom ViewGroups.md"
+    },
+	{
+      "name": "Android下拉刷新开源库对比",
+      "path": "/android/性能优化/Android下拉刷新开源库对比.md"
     }
   ]
 }
