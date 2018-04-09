@@ -75,6 +75,10 @@
 	{
       "name": "19、强引用置为null，会不会被回收",
       "path": "/android/性能优化/19、强引用置为null，会不会被回收.md"
+    },
+	{
+      "name": "Android内存优化",
+      "path": "/android/性能优化/Android内存优化.md"
     }
   ]
 }
