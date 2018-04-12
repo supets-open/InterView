@@ -13,20 +13,8 @@
       "name": "4、LRUCache原理",
       "path": "/android/图片处理技术/4、LRUCache原理.md"
     }, {
-      "name": "5、图片加载原理",
-      "path": "/android/图片处理技术/5、图片加载原理.md"
-    }, {
-      "name": "6、自己去实现图片库，怎么做",
-      "path": "/android/图片处理技术/6、自己去实现图片库，怎么做.md"
-    }, {
-      "name": "7、Glide源码解析",
-      "path": "/android/图片处理技术/7、Glide源码解析.md"
-    }, {
-      "name": "8、Glide使用什么缓存",
-      "path": "/android/图片处理技术/8、Glide使用什么缓存.md"
-    }, {
-      "name": "9、Glide内存缓存如何控制大小",
-      "path": "/android/图片处理技术/9、Glide内存缓存如何控制大小.md"
+      "name": "5、Glide源码解析",
+      "path": "/android/图片处理技术/5、Glide源码解析.md"
     }
   ]
 }

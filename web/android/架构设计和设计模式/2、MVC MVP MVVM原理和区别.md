@@ -1,39 +1,12 @@
-1、谈谈你对Android设计模式的理解
+[MVVM框架](http://www.cnblogs.com/zs-note/p/7093311.html)
 
-2、MVC MVP MVVM原理和区别
 
-3、你所知道的设计模式有哪些？
+[MVVM在Android上的正确使用方式](https://blog.csdn.net/z842667166/article/details/73863651)
 
-4、项目中常用的设计模式
+[Android MVVM+DataBinding结合Dagger2进行开发](https://blog.csdn.net/mq2553299/article/details/72870653)
 
-5、手写生产者/消费者模式
 
-6、写出观察者模式的代码
+[玩转Android之MVVM开发模式实战，炫酷的DataBinding！](https://blog.csdn.net/u012702547/article/details/52077515)
 
-7、适配器模式，装饰者模式，外观模式的异同？
 
-8、用到的一些开源框架，介绍一个看过源码的，内部实现过程。
-
-9、谈谈对RxJava的理解
-
-10、RxJava的功能与原理实现
-
-11、RxJava的作用，与平时使用的异步操作来比的优缺点
-
-12、说说EventBus作用，实现方式，代替EventBus的方式
-
-13、从0设计一款App整体架构，如何去做？
-
-14、说一款你认为当前比较火的应用并设计(比如：直播APP，P2P金融，小视频等)
-
-15、谈谈对java状态机理解
-
-16、Fragment如果在Adapter中使用应该如何解耦？
-
-17、Binder机制及底层实现
-
-18、对于应用更新这块是如何做的？(解答：灰度，强制更新，分区域更新)？
-
-19、实现一个Json解析器(可以通过正则提高速度)
-
-20、统计启动时长,标准
+[细说Android框架设计三剑客MVC、MVP和MVVM](https://blog.csdn.net/mynameishuangshuai/article/details/52808032)

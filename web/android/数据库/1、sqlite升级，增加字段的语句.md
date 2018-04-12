@@ -1,7 +1,4 @@
-1、sqlite升级，增加字段的语句
+[Android SQLite 及其更新](https://blog.csdn.net/qq_16430735/article/details/49641519)
 
-2、数据库框架对比和源码分析
 
-3、数据库的优化
-
-4、数据库数据迁移问题
+[android sqlite 完全用replace替代 insert 和 update 操作 ](https://blog.csdn.net/DucklikeJAVA/article/details/53932045)
