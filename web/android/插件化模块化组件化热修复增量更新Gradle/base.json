@@ -27,6 +27,9 @@
     }, {
       "name": "安卓开发通过自定义Gradle插件实现自动化埋点",
       "path": "/android/插件化模块化组件化热修复增量更新Gradle/安卓开发通过自定义Gradle插件实现自动化埋点.md"
+    }, {
+      "name": "一起来动手做个 AS 插件，自动生成Java Bean文件",
+      "path": "/android/插件化模块化组件化热修复增量更新Gradle/一起来动手做个 AS 插件，自动生成Java Bean文件.md"
     }
   ]
 }

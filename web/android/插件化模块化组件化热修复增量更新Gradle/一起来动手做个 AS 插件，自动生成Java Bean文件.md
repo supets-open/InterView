@@ -1,0 +1,1 @@
+[一起来动手做个 AS 插件，自动生成Java Bean文件](https://blog.csdn.net/qq_27258799/article/details/79295251)
