@@ -27,6 +27,12 @@
     },  {
       "name": "Android源码解析系列",
       "path": "https://blog.csdn.net/qq_23547831/article/details/50696046"
+    },  {
+      "name": "DiffUtil新工具类，让你的RecyclerView飞一会",
+      "path": "/result/扩展知识/DiffUtil新工具类，让你的RecyclerView飞一会.md"
+    },  {
+      "name": "使用AsyncListUtil优化RecyclerView",
+      "path": "/result/扩展知识/使用AsyncListUtil优化RecyclerView.md"
     }
   ]
 }
