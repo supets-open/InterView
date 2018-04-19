@@ -14,3 +14,4 @@
 
 [AMS管理android四大组件](https://blog.csdn.net/qq526459753/article/details/51034637)
 
+[Window与WMS通信过程](https://www.jianshu.com/p/028be994677f?utm_campaign=maleskine&utm_content=note&utm_medium=pc_all_hots&utm_source=recommendation)
