@@ -30,6 +30,9 @@
     }, {
       "name": "一起来动手做个 AS 插件，自动生成Java Bean文件",
       "path": "/android/插件化模块化组件化热修复增量更新Gradle/一起来动手做个 AS 插件，自动生成Java Bean文件.md"
+    }, {
+      "name": "Android studio 3.0 引起的自定义打包文件名 outputFile sync failed",
+      "path": "/android/插件化模块化组件化热修复增量更新Gradle/Android studio 3.0 引起的自定义打包文件名 outputFile sync failed.md"
     }
   ]
 }
