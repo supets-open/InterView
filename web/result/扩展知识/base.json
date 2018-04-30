@@ -36,6 +36,9 @@
     },  {
       "name": "多线程下载",
       "path": "/result/扩展知识/多线程下载.md"
+    },  {
+      "name": "git",
+      "path": "/result/扩展知识/git.md"
     }
   ]
 }
